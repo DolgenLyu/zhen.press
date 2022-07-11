@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>如何攒一台黑苹果（小白向） | ZHEN</title>
+<meta name="keywords" content="">
+<meta name="description" content="苹果系统真的有传说中那么好用吗？这个问题的答案大概因人而异，但苹果系统好看这点毋庸置疑。那买不起MAC电脑的你如何该攒一台黑苹果呢？本期视频就和大家分享黑苹果电脑的硬件选择。大家好，我是阿圳，欢迎回到我的频道。
+0202年，黑苹果的安装难度已经大大减小了，硬件兼容性也有了很大提升。只要选择合适的主板、CPU和显卡，一台黑苹果就具备了基本的工作能力。免驱无线网卡和SSD等都只是锦上添花，是追求完美黑苹果极致体验的必经之路。
+要攒一台黑苹果，首先要确定你的CPU。英特尔酷睿系列CPU都可以完美支持黑苹果，2、3代的AMD锐龙CPU也有不错的兼容性了。至于垃圾佬喜欢的志强系列，以及办公级的奔腾系列，一般玩家还是别碰了。
+由于目前的MAC都是采用英特尔的CPU，所以理论上讲选择英特尔CPU所带来的系统和软件的兼容性会比AMD好一些。英特尔的CPU有带K和不带K以及带核显与不带核显的分别，想超频的朋友建议还是选择尾缀带K的型号，如9600K和10700K，不超频的朋友选择不带后缀的型号就好了，比如10400或者10700。选择英特尔的CPU还是建议买带核显的型号，虽然价格贵一两百，但开启核显加速后在视频编解码方面还是有一定的作用。
+AMD的CPU就不存在这些问题，带后缀X的无非频率高些，而且锐龙CPU全都没有核显，锐龙APU的核显也是驱动不了的。
+选好CPU就要选择主板了，这也是搭建黑苹果的重中之重。首先要选择适合自己CPU型号的主板。如果是英特尔系列，带K后缀的CPU建议搭载Z系列主板，以获得超频能力，同时可以安排高频内存。不带后缀的主板，如B360和B460系列主板即可，同时内存最高支持到2666MHz。AMD的CPU则要注意，3700X以下选择B450主板即可，3700X以上建议选择X570系列主板获得超频能力，同时AMD的主板全系列兼容高频内存。
+那具体选择哪一款主板，这个就要你自己考量了，毕竟就连同一厂商同一个芯片组还会衍生带很多后缀的主板。但在选之前，还是要去黑果小兵博客、远景、B站和Github搜一下是否已经有对应的EFI引导，最好选择已经有人分享EFI的主板，免去自己定制的麻烦。
+个人观点，EFI文件可以理解为解释文件，它把我们这些电脑配件解释成苹果官方的配件，从而欺骗MAC OS实现系统兼容与安装，当然同时也提供了驱动功能。也可以说，找到一份合适的EFI文件才是黑苹果开始的第一步。
+通常而言EFI文件是一个主板一套配置，但有些主板之间也是可以兼容的。比如微星的B450m迫击炮和华硕的TUF B450m就是基本兼容的，但很多同芯片主板之间还是不兼容的，哪怕出自同一个厂商。所以一定要确定找到对应主板的EFI。
+主板、CPU之后，黑苹果剩下的一个大件就是显卡了。显卡其实很简单，由于目前最新的MAC OS已经不支持新版英伟达显卡了，所以AMD显卡是首选。最新的RX500系列和RX5000系列都有不错的兼容性，具体型号可以看这张黑果小兵的图。这里要注意的就是马甲显卡，比如RX590GEM其实是RX580的超频版，RX580 2048SP是RX470的超频版，所以都不免驱，可以通过刷VBIOS解决。不过新手还是别尝试刷VBIOS了，一旦找错了固件又忘了备份就会造成显卡点不亮。不过型号对不代表一定兼容良好，还涉及到厂商品牌。AMD显卡厂商里蓝宝石和华硕的产品对MAC OS的兼容性最好，迪兰也不错，至于XFX、华擎、盈通、铭瑄等等，兼容性就要差一些甚至不兼容，不能一概而论。
+安装好黑苹果以后如何确定显卡是否兼容呢？首先打开关于本机查看显卡显存是否正确识别，如果仅有十几兆显存那就是未被驱动了。另外也可以通过GeekBench5跑分确定兼容情况，比如RX560D跑分在2w上下，RX590跑分在5w上下，RX5700XT跑分在8W上下。
+至此黑苹果的主要硬件就选择完毕了。不过还需要注意的是，三星PM981a这块固态硬盘默认情况是无法安装MAC OS的，甚至作为资料盘也会造成MAC OS死机。尽管同样有解决办法，但小白还是买其他型号就可以了，m.2固态硬盘最好，MAC OS放在机械硬盘尤其是叠瓦盘里可能会让你怀疑人生。
+另外就是网卡。一般EFI都会解决板载有线网卡的问题，不过最新的2.5G网卡目前只能识别到1G就是了。无线网卡方面，intel网卡基本都不免驱，螃蟹网卡兼容性也不佳，博通网卡很多都可以免驱。另外，macbook拆机无线网卡都是可以免驱的，最火也是最贵的型号应该就是博通BCM94360CD了，对应厂商和型号是奋威T919，其实就是拆机卡。
+蓝牙方面一般都无线网卡上都有搭配，把线连接到主板的USB接口就行了。另外很多10几块的USB蓝牙发射器都可以驱动的。无线网卡处理好以后，就可以使用MAC OS的隔空投送了，另外隔空投屏也能使用，前提是你的CPU带核显。最重要的，首先你得有一台iphone和ipad。
+至此一台黑苹果所需要的重要硬件就选择完毕了，剩下的就是安装。现在的MAC OS安装很简单，和win10差不多，无非多了替换EFI这一步。
+最后呢给大家一套可以完美兼容的配置，懒得查型号的朋友可以直接拿去用了。
+硬件 型号 厂商 备注 CPU i5 10400 intel 十代有点略贵 主板 B460M 迫击炮 MSI微星 遇事不决炮击炮 显卡 RX5500XT 蓝宝石 AMD显卡中的ROG 硬盘 SN550 1t 西数 512略小，1t最好；换闪迪至尊还可以省几十块 网卡 BCM94360CD/奋威T919 博通/奋威 拆机卡加pcie转接板而已，不过算是做工做好的了 电源 BT 500W Tt 铜牌模组，关键是便宜还送收纳盒 机箱 R-M3 雷匠 尺寸不错。不过USB3.0和底部硬盘位有点冲突 散热 G3 雅浚 目前百元最强，噪音控制也不错 EFI 点击查看 来自远景论坛 好了以上就是本期视频的全部内容了，非常感谢你能够看到这里。如果这期视频能够对你有一丁点的帮助我都会非常开心，也希望你能够点个赞、投个币、点个关注支持一下我，我是阿圳，致力于和你一起分享各种数码产品的使用体验和玩法，让我们下期再见。">
+<meta name="author" content="Theme PaperMod">
+<link rel="canonical" href="https://zhen.media/post/video/2021/%E5%A6%82%E4%BD%95%E6%94%92%E4%B8%80%E5%8F%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.62cda73ebecddc7b0e83bbd0720841ac5c011375cf823c464d2c5be7ee822eb6.css" integrity="sha256-Ys2nPr7N3HsOg7vQcghBrFwBE3XPgjxGTSxb5&#43;6CLrY=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://zhen.media/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://zhen.media/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://zhen.media/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://zhen.media/apple-touch-icon.png">
+<link rel="mask-icon" href="https://zhen.media/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="如何攒一台黑苹果（小白向）" />
+<meta property="og:description" content="苹果系统真的有传说中那么好用吗？这个问题的答案大概因人而异，但苹果系统好看这点毋庸置疑。那买不起MAC电脑的你如何该攒一台黑苹果呢？本期视频就和大家分享黑苹果电脑的硬件选择。大家好，我是阿圳，欢迎回到我的频道。
+0202年，黑苹果的安装难度已经大大减小了，硬件兼容性也有了很大提升。只要选择合适的主板、CPU和显卡，一台黑苹果就具备了基本的工作能力。免驱无线网卡和SSD等都只是锦上添花，是追求完美黑苹果极致体验的必经之路。
+要攒一台黑苹果，首先要确定你的CPU。英特尔酷睿系列CPU都可以完美支持黑苹果，2、3代的AMD锐龙CPU也有不错的兼容性了。至于垃圾佬喜欢的志强系列，以及办公级的奔腾系列，一般玩家还是别碰了。
+由于目前的MAC都是采用英特尔的CPU，所以理论上讲选择英特尔CPU所带来的系统和软件的兼容性会比AMD好一些。英特尔的CPU有带K和不带K以及带核显与不带核显的分别，想超频的朋友建议还是选择尾缀带K的型号，如9600K和10700K，不超频的朋友选择不带后缀的型号就好了，比如10400或者10700。选择英特尔的CPU还是建议买带核显的型号，虽然价格贵一两百，但开启核显加速后在视频编解码方面还是有一定的作用。
+AMD的CPU就不存在这些问题，带后缀X的无非频率高些，而且锐龙CPU全都没有核显，锐龙APU的核显也是驱动不了的。
+选好CPU就要选择主板了，这也是搭建黑苹果的重中之重。首先要选择适合自己CPU型号的主板。如果是英特尔系列，带K后缀的CPU建议搭载Z系列主板，以获得超频能力，同时可以安排高频内存。不带后缀的主板，如B360和B460系列主板即可，同时内存最高支持到2666MHz。AMD的CPU则要注意，3700X以下选择B450主板即可，3700X以上建议选择X570系列主板获得超频能力，同时AMD的主板全系列兼容高频内存。
+那具体选择哪一款主板，这个就要你自己考量了，毕竟就连同一厂商同一个芯片组还会衍生带很多后缀的主板。但在选之前，还是要去黑果小兵博客、远景、B站和Github搜一下是否已经有对应的EFI引导，最好选择已经有人分享EFI的主板，免去自己定制的麻烦。
+个人观点，EFI文件可以理解为解释文件，它把我们这些电脑配件解释成苹果官方的配件，从而欺骗MAC OS实现系统兼容与安装，当然同时也提供了驱动功能。也可以说，找到一份合适的EFI文件才是黑苹果开始的第一步。
+通常而言EFI文件是一个主板一套配置，但有些主板之间也是可以兼容的。比如微星的B450m迫击炮和华硕的TUF B450m就是基本兼容的，但很多同芯片主板之间还是不兼容的，哪怕出自同一个厂商。所以一定要确定找到对应主板的EFI。
+主板、CPU之后，黑苹果剩下的一个大件就是显卡了。显卡其实很简单，由于目前最新的MAC OS已经不支持新版英伟达显卡了，所以AMD显卡是首选。最新的RX500系列和RX5000系列都有不错的兼容性，具体型号可以看这张黑果小兵的图。这里要注意的就是马甲显卡，比如RX590GEM其实是RX580的超频版，RX580 2048SP是RX470的超频版，所以都不免驱，可以通过刷VBIOS解决。不过新手还是别尝试刷VBIOS了，一旦找错了固件又忘了备份就会造成显卡点不亮。不过型号对不代表一定兼容良好，还涉及到厂商品牌。AMD显卡厂商里蓝宝石和华硕的产品对MAC OS的兼容性最好，迪兰也不错，至于XFX、华擎、盈通、铭瑄等等，兼容性就要差一些甚至不兼容，不能一概而论。
+安装好黑苹果以后如何确定显卡是否兼容呢？首先打开关于本机查看显卡显存是否正确识别，如果仅有十几兆显存那就是未被驱动了。另外也可以通过GeekBench5跑分确定兼容情况，比如RX560D跑分在2w上下，RX590跑分在5w上下，RX5700XT跑分在8W上下。
+至此黑苹果的主要硬件就选择完毕了。不过还需要注意的是，三星PM981a这块固态硬盘默认情况是无法安装MAC OS的，甚至作为资料盘也会造成MAC OS死机。尽管同样有解决办法，但小白还是买其他型号就可以了，m.2固态硬盘最好，MAC OS放在机械硬盘尤其是叠瓦盘里可能会让你怀疑人生。
+另外就是网卡。一般EFI都会解决板载有线网卡的问题，不过最新的2.5G网卡目前只能识别到1G就是了。无线网卡方面，intel网卡基本都不免驱，螃蟹网卡兼容性也不佳，博通网卡很多都可以免驱。另外，macbook拆机无线网卡都是可以免驱的，最火也是最贵的型号应该就是博通BCM94360CD了，对应厂商和型号是奋威T919，其实就是拆机卡。
+蓝牙方面一般都无线网卡上都有搭配，把线连接到主板的USB接口就行了。另外很多10几块的USB蓝牙发射器都可以驱动的。无线网卡处理好以后，就可以使用MAC OS的隔空投送了，另外隔空投屏也能使用，前提是你的CPU带核显。最重要的，首先你得有一台iphone和ipad。
+至此一台黑苹果所需要的重要硬件就选择完毕了，剩下的就是安装。现在的MAC OS安装很简单，和win10差不多，无非多了替换EFI这一步。
+最后呢给大家一套可以完美兼容的配置，懒得查型号的朋友可以直接拿去用了。
+硬件 型号 厂商 备注 CPU i5 10400 intel 十代有点略贵 主板 B460M 迫击炮 MSI微星 遇事不决炮击炮 显卡 RX5500XT 蓝宝石 AMD显卡中的ROG 硬盘 SN550 1t 西数 512略小，1t最好；换闪迪至尊还可以省几十块 网卡 BCM94360CD/奋威T919 博通/奋威 拆机卡加pcie转接板而已，不过算是做工做好的了 电源 BT 500W Tt 铜牌模组，关键是便宜还送收纳盒 机箱 R-M3 雷匠 尺寸不错。不过USB3.0和底部硬盘位有点冲突 散热 G3 雅浚 目前百元最强，噪音控制也不错 EFI 点击查看 来自远景论坛 好了以上就是本期视频的全部内容了，非常感谢你能够看到这里。如果这期视频能够对你有一丁点的帮助我都会非常开心，也希望你能够点个赞、投个币、点个关注支持一下我，我是阿圳，致力于和你一起分享各种数码产品的使用体验和玩法，让我们下期再见。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhen.media/post/video/2021/%E5%A6%82%E4%BD%95%E6%94%92%E4%B8%80%E5%8F%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/" /><meta property="og:image" content="https://zhen.media/papermod-cover.png"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-07-08T14:48:56&#43;08:00" />
+<meta property="article:modified_time" content="2021-07-08T14:48:56&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zhen.media/papermod-cover.png"/>
+
+<meta name="twitter:title" content="如何攒一台黑苹果（小白向）"/>
+<meta name="twitter:description" content="苹果系统真的有传说中那么好用吗？这个问题的答案大概因人而异，但苹果系统好看这点毋庸置疑。那买不起MAC电脑的你如何该攒一台黑苹果呢？本期视频就和大家分享黑苹果电脑的硬件选择。大家好，我是阿圳，欢迎回到我的频道。
+0202年，黑苹果的安装难度已经大大减小了，硬件兼容性也有了很大提升。只要选择合适的主板、CPU和显卡，一台黑苹果就具备了基本的工作能力。免驱无线网卡和SSD等都只是锦上添花，是追求完美黑苹果极致体验的必经之路。
+要攒一台黑苹果，首先要确定你的CPU。英特尔酷睿系列CPU都可以完美支持黑苹果，2、3代的AMD锐龙CPU也有不错的兼容性了。至于垃圾佬喜欢的志强系列，以及办公级的奔腾系列，一般玩家还是别碰了。
+由于目前的MAC都是采用英特尔的CPU，所以理论上讲选择英特尔CPU所带来的系统和软件的兼容性会比AMD好一些。英特尔的CPU有带K和不带K以及带核显与不带核显的分别，想超频的朋友建议还是选择尾缀带K的型号，如9600K和10700K，不超频的朋友选择不带后缀的型号就好了，比如10400或者10700。选择英特尔的CPU还是建议买带核显的型号，虽然价格贵一两百，但开启核显加速后在视频编解码方面还是有一定的作用。
+AMD的CPU就不存在这些问题，带后缀X的无非频率高些，而且锐龙CPU全都没有核显，锐龙APU的核显也是驱动不了的。
+选好CPU就要选择主板了，这也是搭建黑苹果的重中之重。首先要选择适合自己CPU型号的主板。如果是英特尔系列，带K后缀的CPU建议搭载Z系列主板，以获得超频能力，同时可以安排高频内存。不带后缀的主板，如B360和B460系列主板即可，同时内存最高支持到2666MHz。AMD的CPU则要注意，3700X以下选择B450主板即可，3700X以上建议选择X570系列主板获得超频能力，同时AMD的主板全系列兼容高频内存。
+那具体选择哪一款主板，这个就要你自己考量了，毕竟就连同一厂商同一个芯片组还会衍生带很多后缀的主板。但在选之前，还是要去黑果小兵博客、远景、B站和Github搜一下是否已经有对应的EFI引导，最好选择已经有人分享EFI的主板，免去自己定制的麻烦。
+个人观点，EFI文件可以理解为解释文件，它把我们这些电脑配件解释成苹果官方的配件，从而欺骗MAC OS实现系统兼容与安装，当然同时也提供了驱动功能。也可以说，找到一份合适的EFI文件才是黑苹果开始的第一步。
+通常而言EFI文件是一个主板一套配置，但有些主板之间也是可以兼容的。比如微星的B450m迫击炮和华硕的TUF B450m就是基本兼容的，但很多同芯片主板之间还是不兼容的，哪怕出自同一个厂商。所以一定要确定找到对应主板的EFI。
+主板、CPU之后，黑苹果剩下的一个大件就是显卡了。显卡其实很简单，由于目前最新的MAC OS已经不支持新版英伟达显卡了，所以AMD显卡是首选。最新的RX500系列和RX5000系列都有不错的兼容性，具体型号可以看这张黑果小兵的图。这里要注意的就是马甲显卡，比如RX590GEM其实是RX580的超频版，RX580 2048SP是RX470的超频版，所以都不免驱，可以通过刷VBIOS解决。不过新手还是别尝试刷VBIOS了，一旦找错了固件又忘了备份就会造成显卡点不亮。不过型号对不代表一定兼容良好，还涉及到厂商品牌。AMD显卡厂商里蓝宝石和华硕的产品对MAC OS的兼容性最好，迪兰也不错，至于XFX、华擎、盈通、铭瑄等等，兼容性就要差一些甚至不兼容，不能一概而论。
+安装好黑苹果以后如何确定显卡是否兼容呢？首先打开关于本机查看显卡显存是否正确识别，如果仅有十几兆显存那就是未被驱动了。另外也可以通过GeekBench5跑分确定兼容情况，比如RX560D跑分在2w上下，RX590跑分在5w上下，RX5700XT跑分在8W上下。
+至此黑苹果的主要硬件就选择完毕了。不过还需要注意的是，三星PM981a这块固态硬盘默认情况是无法安装MAC OS的，甚至作为资料盘也会造成MAC OS死机。尽管同样有解决办法，但小白还是买其他型号就可以了，m.2固态硬盘最好，MAC OS放在机械硬盘尤其是叠瓦盘里可能会让你怀疑人生。
+另外就是网卡。一般EFI都会解决板载有线网卡的问题，不过最新的2.5G网卡目前只能识别到1G就是了。无线网卡方面，intel网卡基本都不免驱，螃蟹网卡兼容性也不佳，博通网卡很多都可以免驱。另外，macbook拆机无线网卡都是可以免驱的，最火也是最贵的型号应该就是博通BCM94360CD了，对应厂商和型号是奋威T919，其实就是拆机卡。
+蓝牙方面一般都无线网卡上都有搭配，把线连接到主板的USB接口就行了。另外很多10几块的USB蓝牙发射器都可以驱动的。无线网卡处理好以后，就可以使用MAC OS的隔空投送了，另外隔空投屏也能使用，前提是你的CPU带核显。最重要的，首先你得有一台iphone和ipad。
+至此一台黑苹果所需要的重要硬件就选择完毕了，剩下的就是安装。现在的MAC OS安装很简单，和win10差不多，无非多了替换EFI这一步。
+最后呢给大家一套可以完美兼容的配置，懒得查型号的朋友可以直接拿去用了。
+硬件 型号 厂商 备注 CPU i5 10400 intel 十代有点略贵 主板 B460M 迫击炮 MSI微星 遇事不决炮击炮 显卡 RX5500XT 蓝宝石 AMD显卡中的ROG 硬盘 SN550 1t 西数 512略小，1t最好；换闪迪至尊还可以省几十块 网卡 BCM94360CD/奋威T919 博通/奋威 拆机卡加pcie转接板而已，不过算是做工做好的了 电源 BT 500W Tt 铜牌模组，关键是便宜还送收纳盒 机箱 R-M3 雷匠 尺寸不错。不过USB3.0和底部硬盘位有点冲突 散热 G3 雅浚 目前百元最强，噪音控制也不错 EFI 点击查看 来自远景论坛 好了以上就是本期视频的全部内容了，非常感谢你能够看到这里。如果这期视频能够对你有一丁点的帮助我都会非常开心，也希望你能够点个赞、投个币、点个关注支持一下我，我是阿圳，致力于和你一起分享各种数码产品的使用体验和玩法，让我们下期再见。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://zhen.media/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "如何攒一台黑苹果（小白向）",
+      "item": "https://zhen.media/post/video/2021/%E5%A6%82%E4%BD%95%E6%94%92%E4%B8%80%E5%8F%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "如何攒一台黑苹果（小白向）",
+  "name": "如何攒一台黑苹果（小白向）",
+  "description": "苹果系统真的有传说中那么好用吗？这个问题的答案大概因人而异，但苹果系统好看这点毋庸置疑。那买不起MAC电脑的你如何该攒一台黑苹果呢？本期视频就和大家分享黑苹果电脑的硬件选择。大家好，我是阿圳，欢迎回到我的频道。\n0202年，黑苹果的安装难度已经大大减小了，硬件兼容性也有了很大提升。只要选择合适的主板、CPU和显卡，一台黑苹果就具备了基本的工作能力。免驱无线网卡和SSD等都只是锦上添花，是追求完美黑苹果极致体验的必经之路。\n要攒一台黑苹果，首先要确定你的CPU。英特尔酷睿系列CPU都可以完美支持黑苹果，2、3代的AMD锐龙CPU也有不错的兼容性了。至于垃圾佬喜欢的志强系列，以及办公级的奔腾系列，一般玩家还是别碰了。\n由于目前的MAC都是采用英特尔的CPU，所以理论上讲选择英特尔CPU所带来的系统和软件的兼容性会比AMD好一些。英特尔的CPU有带K和不带K以及带核显与不带核显的分别，想超频的朋友建议还是选择尾缀带K的型号，如9600K和10700K，不超频的朋友选择不带后缀的型号就好了，比如10400或者10700。选择英特尔的CPU还是建议买带核显的型号，虽然价格贵一两百，但开启核显加速后在视频编解码方面还是有一定的作用。\nAMD的CPU就不存在这些问题，带后缀X的无非频率高些，而且锐龙CPU全都没有核显，锐龙APU的核显也是驱动不了的。\n选好CPU就要选择主板了，这也是搭建黑苹果的重中之重。首先要选择适合自己CPU型号的主板。如果是英特尔系列，带K后缀的CPU建议搭载Z系列主板，以获得超频能力，同时可以安排高频内存。不带后缀的主板，如B360和B460系列主板即可，同时内存最高支持到2666MHz。AMD的CPU则要注意，3700X以下选择B450主板即可，3700X以上建议选择X570系列主板获得超频能力，同时AMD的主板全系列兼容高频内存。\n那具体选择哪一款主板，这个就要你自己考量了，毕竟就连同一厂商同一个芯片组还会衍生带很多后缀的主板。但在选之前，还是要去黑果小兵博客、远景、B站和Github搜一下是否已经有对应的EFI引导，最好选择已经有人分享EFI的主板，免去自己定制的麻烦。\n个人观点，EFI文件可以理解为解释文件，它把我们这些电脑配件解释成苹果官方的配件，从而欺骗MAC OS实现系统兼容与安装，当然同时也提供了驱动功能。也可以说，找到一份合适的EFI文件才是黑苹果开始的第一步。\n通常而言EFI文件是一个主板一套配置，但有些主板之间也是可以兼容的。比如微星的B450m迫击炮和华硕的TUF B450m就是基本兼容的，但很多同芯片主板之间还是不兼容的，哪怕出自同一个厂商。所以一定要确定找到对应主板的EFI。\n主板、CPU之后，黑苹果剩下的一个大件就是显卡了。显卡其实很简单，由于目前最新的MAC OS已经不支持新版英伟达显卡了，所以AMD显卡是首选。最新的RX500系列和RX5000系列都有不错的兼容性，具体型号可以看这张黑果小兵的图。这里要注意的就是马甲显卡，比如RX590GEM其实是RX580的超频版，RX580 2048SP是RX470的超频版，所以都不免驱，可以通过刷VBIOS解决。不过新手还是别尝试刷VBIOS了，一旦找错了固件又忘了备份就会造成显卡点不亮。不过型号对不代表一定兼容良好，还涉及到厂商品牌。AMD显卡厂商里蓝宝石和华硕的产品对MAC OS的兼容性最好，迪兰也不错，至于XFX、华擎、盈通、铭瑄等等，兼容性就要差一些甚至不兼容，不能一概而论。\n安装好黑苹果以后如何确定显卡是否兼容呢？首先打开关于本机查看显卡显存是否正确识别，如果仅有十几兆显存那就是未被驱动了。另外也可以通过GeekBench5跑分确定兼容情况，比如RX560D跑分在2w上下，RX590跑分在5w上下，RX5700XT跑分在8W上下。\n至此黑苹果的主要硬件就选择完毕了。不过还需要注意的是，三星PM981a这块固态硬盘默认情况是无法安装MAC OS的，甚至作为资料盘也会造成MAC OS死机。尽管同样有解决办法，但小白还是买其他型号就可以了，m.2固态硬盘最好，MAC OS放在机械硬盘尤其是叠瓦盘里可能会让你怀疑人生。\n另外就是网卡。一般EFI都会解决板载有线网卡的问题，不过最新的2.5G网卡目前只能识别到1G就是了。无线网卡方面，intel网卡基本都不免驱，螃蟹网卡兼容性也不佳，博通网卡很多都可以免驱。另外，macbook拆机无线网卡都是可以免驱的，最火也是最贵的型号应该就是博通BCM94360CD了，对应厂商和型号是奋威T919，其实就是拆机卡。\n蓝牙方面一般都无线网卡上都有搭配，把线连接到主板的USB接口就行了。另外很多10几块的USB蓝牙发射器都可以驱动的。无线网卡处理好以后，就可以使用MAC OS的隔空投送了，另外隔空投屏也能使用，前提是你的CPU带核显。最重要的，首先你得有一台iphone和ipad。\n至此一台黑苹果所需要的重要硬件就选择完毕了，剩下的就是安装。现在的MAC OS安装很简单，和win10差不多，无非多了替换EFI这一步。\n最后呢给大家一套可以完美兼容的配置，懒得查型号的朋友可以直接拿去用了。\n硬件 型号 厂商 备注 CPU i5 10400 intel 十代有点略贵 主板 B460M 迫击炮 MSI微星 遇事不决炮击炮 显卡 RX5500XT 蓝宝石 AMD显卡中的ROG 硬盘 SN550 1t 西数 512略小，1t最好；换闪迪至尊还可以省几十块 网卡 BCM94360CD/奋威T919 博通/奋威 拆机卡加pcie转接板而已，不过算是做工做好的了 电源 BT 500W Tt 铜牌模组，关键是便宜还送收纳盒 机箱 R-M3 雷匠 尺寸不错。不过USB3.0和底部硬盘位有点冲突 散热 G3 雅浚 目前百元最强，噪音控制也不错 EFI 点击查看 来自远景论坛 好了以上就是本期视频的全部内容了，非常感谢你能够看到这里。如果这期视频能够对你有一丁点的帮助我都会非常开心，也希望你能够点个赞、投个币、点个关注支持一下我，我是阿圳，致力于和你一起分享各种数码产品的使用体验和玩法，让我们下期再见。",
+  "keywords": [
+    
+  ],
+  "articleBody": "苹果系统真的有传说中那么好用吗？这个问题的答案大概因人而异，但苹果系统好看这点毋庸置疑。那买不起MAC电脑的你如何该攒一台黑苹果呢？本期视频就和大家分享黑苹果电脑的硬件选择。大家好，我是阿圳，欢迎回到我的频道。\n0202年，黑苹果的安装难度已经大大减小了，硬件兼容性也有了很大提升。只要选择合适的主板、CPU和显卡，一台黑苹果就具备了基本的工作能力。免驱无线网卡和SSD等都只是锦上添花，是追求完美黑苹果极致体验的必经之路。\n要攒一台黑苹果，首先要确定你的CPU。英特尔酷睿系列CPU都可以完美支持黑苹果，2、3代的AMD锐龙CPU也有不错的兼容性了。至于垃圾佬喜欢的志强系列，以及办公级的奔腾系列，一般玩家还是别碰了。\n由于目前的MAC都是采用英特尔的CPU，所以理论上讲选择英特尔CPU所带来的系统和软件的兼容性会比AMD好一些。英特尔的CPU有带K和不带K以及带核显与不带核显的分别，想超频的朋友建议还是选择尾缀带K的型号，如9600K和10700K，不超频的朋友选择不带后缀的型号就好了，比如10400或者10700。选择英特尔的CPU还是建议买带核显的型号，虽然价格贵一两百，但开启核显加速后在视频编解码方面还是有一定的作用。\nAMD的CPU就不存在这些问题，带后缀X的无非频率高些，而且锐龙CPU全都没有核显，锐龙APU的核显也是驱动不了的。\n选好CPU就要选择主板了，这也是搭建黑苹果的重中之重。首先要选择适合自己CPU型号的主板。如果是英特尔系列，带K后缀的CPU建议搭载Z系列主板，以获得超频能力，同时可以安排高频内存。不带后缀的主板，如B360和B460系列主板即可，同时内存最高支持到2666MHz。AMD的CPU则要注意，3700X以下选择B450主板即可，3700X以上建议选择X570系列主板获得超频能力，同时AMD的主板全系列兼容高频内存。\n那具体选择哪一款主板，这个就要你自己考量了，毕竟就连同一厂商同一个芯片组还会衍生带很多后缀的主板。但在选之前，还是要去黑果小兵博客、远景、B站和Github搜一下是否已经有对应的EFI引导，最好选择已经有人分享EFI的主板，免去自己定制的麻烦。\n个人观点，EFI文件可以理解为解释文件，它把我们这些电脑配件解释成苹果官方的配件，从而欺骗MAC OS实现系统兼容与安装，当然同时也提供了驱动功能。也可以说，找到一份合适的EFI文件才是黑苹果开始的第一步。\n通常而言EFI文件是一个主板一套配置，但有些主板之间也是可以兼容的。比如微星的B450m迫击炮和华硕的TUF B450m就是基本兼容的，但很多同芯片主板之间还是不兼容的，哪怕出自同一个厂商。所以一定要确定找到对应主板的EFI。\n主板、CPU之后，黑苹果剩下的一个大件就是显卡了。显卡其实很简单，由于目前最新的MAC OS已经不支持新版英伟达显卡了，所以AMD显卡是首选。最新的RX500系列和RX5000系列都有不错的兼容性，具体型号可以看这张黑果小兵的图。这里要注意的就是马甲显卡，比如RX590GEM其实是RX580的超频版，RX580 2048SP是RX470的超频版，所以都不免驱，可以通过刷VBIOS解决。不过新手还是别尝试刷VBIOS了，一旦找错了固件又忘了备份就会造成显卡点不亮。不过型号对不代表一定兼容良好，还涉及到厂商品牌。AMD显卡厂商里蓝宝石和华硕的产品对MAC OS的兼容性最好，迪兰也不错，至于XFX、华擎、盈通、铭瑄等等，兼容性就要差一些甚至不兼容，不能一概而论。\n安装好黑苹果以后如何确定显卡是否兼容呢？首先打开关于本机查看显卡显存是否正确识别，如果仅有十几兆显存那就是未被驱动了。另外也可以通过GeekBench5跑分确定兼容情况，比如RX560D跑分在2w上下，RX590跑分在5w上下，RX5700XT跑分在8W上下。\n至此黑苹果的主要硬件就选择完毕了。不过还需要注意的是，三星PM981a这块固态硬盘默认情况是无法安装MAC OS的，甚至作为资料盘也会造成MAC OS死机。尽管同样有解决办法，但小白还是买其他型号就可以了，m.2固态硬盘最好，MAC OS放在机械硬盘尤其是叠瓦盘里可能会让你怀疑人生。\n另外就是网卡。一般EFI都会解决板载有线网卡的问题，不过最新的2.5G网卡目前只能识别到1G就是了。无线网卡方面，intel网卡基本都不免驱，螃蟹网卡兼容性也不佳，博通网卡很多都可以免驱。另外，macbook拆机无线网卡都是可以免驱的，最火也是最贵的型号应该就是博通BCM94360CD了，对应厂商和型号是奋威T919，其实就是拆机卡。\n蓝牙方面一般都无线网卡上都有搭配，把线连接到主板的USB接口就行了。另外很多10几块的USB蓝牙发射器都可以驱动的。无线网卡处理好以后，就可以使用MAC OS的隔空投送了，另外隔空投屏也能使用，前提是你的CPU带核显。最重要的，首先你得有一台iphone和ipad。\n至此一台黑苹果所需要的重要硬件就选择完毕了，剩下的就是安装。现在的MAC OS安装很简单，和win10差不多，无非多了替换EFI这一步。\n最后呢给大家一套可以完美兼容的配置，懒得查型号的朋友可以直接拿去用了。\n硬件 型号 厂商 备注 CPU i5 10400 intel 十代有点略贵 主板 B460M 迫击炮 MSI微星 遇事不决炮击炮 显卡 RX5500XT 蓝宝石 AMD显卡中的ROG 硬盘 SN550 1t 西数 512略小，1t最好；换闪迪至尊还可以省几十块 网卡 BCM94360CD/奋威T919 博通/奋威 拆机卡加pcie转接板而已，不过算是做工做好的了 电源 BT 500W Tt 铜牌模组，关键是便宜还送收纳盒 机箱 R-M3 雷匠 尺寸不错。不过USB3.0和底部硬盘位有点冲突 散热 G3 雅浚 目前百元最强，噪音控制也不错 EFI 点击查看 来自远景论坛 好了以上就是本期视频的全部内容了，非常感谢你能够看到这里。如果这期视频能够对你有一丁点的帮助我都会非常开心，也希望你能够点个赞、投个币、点个关注支持一下我，我是阿圳，致力于和你一起分享各种数码产品的使用体验和玩法，让我们下期再见。\n",
+  "wordCount" : "70",
+  "inLanguage": "en",
+  "datePublished": "2021-07-08T14:48:56+08:00",
+  "dateModified": "2021-07-08T14:48:56+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Theme PaperMod"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zhen.media/post/video/2021/%E5%A6%82%E4%BD%95%E6%94%92%E4%B8%80%E5%8F%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ZHEN",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zhen.media/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://zhen.media/" accesskey="h" title="ZHEN (Alt + H)">ZHEN</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://zhen.media/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhen.media/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhen.media/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhen.media/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://zhen.media/">Home</a>&nbsp;»&nbsp;<a href="https://zhen.media/post/">Posts</a></div>
+    <h1 class="post-title">
+      如何攒一台黑苹果（小白向）
+    </h1>
+    <div class="post-meta"><span title='2021-07-08 14:48:56 +0800 CST'>July 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod
+
+</div>
+  </header> 
+
+  <div class="post-content"><p>苹果系统真的有传说中那么好用吗？这个问题的答案大概因人而异，但苹果系统好看这点毋庸置疑。那买不起MAC电脑的你如何该攒一台黑苹果呢？本期视频就和大家分享黑苹果电脑的硬件选择。大家好，我是阿圳，欢迎回到我的频道。</p>
+<p>0202年，黑苹果的安装难度已经大大减小了，硬件兼容性也有了很大提升。只要选择合适的主板、CPU和显卡，一台黑苹果就具备了基本的工作能力。免驱无线网卡和SSD等都只是锦上添花，是追求完美黑苹果极致体验的必经之路。</p>
+<p>要攒一台黑苹果，首先要确定你的CPU。英特尔酷睿系列CPU都可以完美支持黑苹果，2、3代的AMD锐龙CPU也有不错的兼容性了。至于垃圾佬喜欢的志强系列，以及办公级的奔腾系列，一般玩家还是别碰了。</p>
+<p>由于目前的MAC都是采用英特尔的CPU，所以理论上讲选择英特尔CPU所带来的系统和软件的兼容性会比AMD好一些。英特尔的CPU有带K和不带K以及带核显与不带核显的分别，想超频的朋友建议还是选择尾缀带K的型号，如9600K和10700K，不超频的朋友选择不带后缀的型号就好了，比如10400或者10700。选择英特尔的CPU还是建议买带核显的型号，虽然价格贵一两百，但开启核显加速后在视频编解码方面还是有一定的作用。</p>
+<p>AMD的CPU就不存在这些问题，带后缀X的无非频率高些，而且锐龙CPU全都没有核显，锐龙APU的核显也是驱动不了的。</p>
+<p>选好CPU就要选择主板了，这也是搭建黑苹果的重中之重。首先要选择适合自己CPU型号的主板。如果是英特尔系列，带K后缀的CPU建议搭载Z系列主板，以获得超频能力，同时可以安排高频内存。不带后缀的主板，如B360和B460系列主板即可，同时内存最高支持到2666MHz。AMD的CPU则要注意，3700X以下选择B450主板即可，3700X以上建议选择X570系列主板获得超频能力，同时AMD的主板全系列兼容高频内存。</p>
+<p>那具体选择哪一款主板，这个就要你自己考量了，毕竟就连同一厂商同一个芯片组还会衍生带很多后缀的主板。但在选之前，还是要去黑果小兵博客、远景、B站和Github搜一下是否已经有对应的EFI引导，最好选择已经有人分享EFI的主板，免去自己定制的麻烦。</p>
+<p>个人观点，EFI文件可以理解为解释文件，它把我们这些电脑配件解释成苹果官方的配件，从而欺骗MAC OS实现系统兼容与安装，当然同时也提供了驱动功能。也可以说，找到一份合适的EFI文件才是黑苹果开始的第一步。</p>
+<p>通常而言EFI文件是一个主板一套配置，但有些主板之间也是可以兼容的。比如微星的B450m迫击炮和华硕的TUF B450m就是基本兼容的，但很多同芯片主板之间还是不兼容的，哪怕出自同一个厂商。所以一定要确定找到对应主板的EFI。</p>
+<p>主板、CPU之后，黑苹果剩下的一个大件就是显卡了。显卡其实很简单，由于目前最新的MAC OS已经不支持新版英伟达显卡了，所以AMD显卡是首选。最新的RX500系列和RX5000系列都有不错的兼容性，具体型号可以看这张黑果小兵的图。这里要注意的就是马甲显卡，比如RX590GEM其实是RX580的超频版，RX580 2048SP是RX470的超频版，所以都不免驱，可以通过刷VBIOS解决。不过新手还是别尝试刷VBIOS了，一旦找错了固件又忘了备份就会造成显卡点不亮。不过型号对不代表一定兼容良好，还涉及到厂商品牌。AMD显卡厂商里蓝宝石和华硕的产品对MAC OS的兼容性最好，迪兰也不错，至于XFX、华擎、盈通、铭瑄等等，兼容性就要差一些甚至不兼容，不能一概而论。</p>
+<p>安装好黑苹果以后如何确定显卡是否兼容呢？首先打开关于本机查看显卡显存是否正确识别，如果仅有十几兆显存那就是未被驱动了。另外也可以通过GeekBench5跑分确定兼容情况，比如RX560D跑分在2w上下，RX590跑分在5w上下，RX5700XT跑分在8W上下。</p>
+<p>至此黑苹果的主要硬件就选择完毕了。不过还需要注意的是，三星PM981a这块固态硬盘默认情况是无法安装MAC OS的，甚至作为资料盘也会造成MAC OS死机。尽管同样有解决办法，但小白还是买其他型号就可以了，m.2固态硬盘最好，MAC OS放在机械硬盘尤其是叠瓦盘里可能会让你怀疑人生。</p>
+<p>另外就是网卡。一般EFI都会解决板载有线网卡的问题，不过最新的2.5G网卡目前只能识别到1G就是了。无线网卡方面，intel网卡基本都不免驱，螃蟹网卡兼容性也不佳，博通网卡很多都可以免驱。另外，macbook拆机无线网卡都是可以免驱的，最火也是最贵的型号应该就是博通BCM94360CD了，对应厂商和型号是奋威T919，其实就是拆机卡。</p>
+<p>蓝牙方面一般都无线网卡上都有搭配，把线连接到主板的USB接口就行了。另外很多10几块的USB蓝牙发射器都可以驱动的。无线网卡处理好以后，就可以使用MAC OS的隔空投送了，另外隔空投屏也能使用，前提是你的CPU带核显。最重要的，首先你得有一台iphone和ipad。</p>
+<p>至此一台黑苹果所需要的重要硬件就选择完毕了，剩下的就是安装。现在的MAC OS安装很简单，和win10差不多，无非多了替换EFI这一步。</p>
+<p>最后呢给大家一套可以完美兼容的配置，懒得查型号的朋友可以直接拿去用了。</p>
+<table>
+<thead>
+<tr>
+<th>硬件</th>
+<th>型号</th>
+<th>厂商</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>i5 10400</td>
+<td>intel</td>
+<td>十代有点略贵</td>
+</tr>
+<tr>
+<td>主板</td>
+<td>B460M 迫击炮</td>
+<td>MSI微星</td>
+<td>遇事不决炮击炮</td>
+</tr>
+<tr>
+<td>显卡</td>
+<td>RX5500XT</td>
+<td>蓝宝石</td>
+<td>AMD显卡中的ROG</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>SN550 1t</td>
+<td>西数</td>
+<td>512略小，1t最好；换闪迪至尊还可以省几十块</td>
+</tr>
+<tr>
+<td>网卡</td>
+<td>BCM94360CD/奋威T919</td>
+<td>博通/奋威</td>
+<td>拆机卡加pcie转接板而已，不过算是做工做好的了</td>
+</tr>
+<tr>
+<td>电源</td>
+<td>BT 500W</td>
+<td>Tt</td>
+<td>铜牌模组，关键是便宜还送收纳盒</td>
+</tr>
+<tr>
+<td>机箱</td>
+<td>R-M3</td>
+<td>雷匠</td>
+<td>尺寸不错。不过USB3.0和底部硬盘位有点冲突</td>
+</tr>
+<tr>
+<td>散热</td>
+<td>G3</td>
+<td>雅浚</td>
+<td>目前百元最强，噪音控制也不错</td>
+</tr>
+<tr>
+<td>EFI</td>
+<td><a href="https://github.com/josways/B460M-MORTAR">点击查看</a></td>
+<td></td>
+<td>来自远景论坛</td>
+</tr>
+</tbody>
+</table>
+<p>好了以上就是本期视频的全部内容了，非常感谢你能够看到这里。如果这期视频能够对你有一丁点的帮助我都会非常开心，也希望你能够点个赞、投个币、点个关注支持一下我，我是阿圳，致力于和你一起分享各种数码产品的使用体验和玩法，让我们下期再见。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://zhen.media/post/video/2021/%E5%9C%B3%E5%BC%80%E9%A6%99%E6%8B%A5%E6%8A%B110%E8%8B%B1%E5%AF%B8inkpad-x%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>墨案inkpad X</span>
+  </a>
+  <a class="next" href="https://zhen.media/post/video/2021/%E7%AE%B1%E8%A7%81%E6%81%A8%E6%99%9A%E5%B7%A6%E6%89%8B%E8%BE%B9%E6%8A%BD%E6%8B%89%E5%BC%8F%E9%BB%91%E5%8C%A3%E5%AD%90%E5%AE%89%E9%92%9B%E5%85%8Bdark-cube/">
+    <span class="title">Next »</span>
+    <br>
+    <span>安钛克Dark Cube</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://zhen.media/">ZHEN</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

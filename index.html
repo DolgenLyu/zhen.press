@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.101.0" /><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>ZHEN</title>
+
+<meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
+<meta name="author" content="Theme PaperMod">
+<link rel="canonical" href="https://zhen.media/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.62cda73ebecddc7b0e83bbd0720841ac5c011375cf823c464d2c5be7ee822eb6.css" integrity="sha256-Ys2nPr7N3HsOg7vQcghBrFwBE3XPgjxGTSxb5&#43;6CLrY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://zhen.media/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://zhen.media/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://zhen.media/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://zhen.media/apple-touch-icon.png">
+<link rel="mask-icon" href="https://zhen.media/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://zhen.media/index.xml">
+<link rel="alternate" type="application/json" href="https://zhen.media/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="ZHEN" />
+<meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://zhen.media/" /><meta property="og:image" content="https://zhen.media/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zhen.media/papermod-cover.png"/>
+
+<meta name="twitter:title" content="ZHEN"/>
+<meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ZHEN",
+  "url": "https://zhen.media/",
+  "description": "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod",
+  "thumbnailUrl": "https://zhen.media/favicon.ico",
+  "sameAs": [
+      "https://github.com/DolgenLyu", "https://space.bilibili.com/165016731", "https://weibo.com/u/7771537407", "index.xml"
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://zhen.media/" accesskey="h" title="ZHEN (Alt + H)">ZHEN</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://zhen.media/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhen.media/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhen.media/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhen.media/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>Dolgen Lyu</h1>
+    </header>
+    <div class="entry-content">
+        阿圳，95后青年，来自内蒙沙地，遥居西子湖畔，有猫无狗，不务正业，搞点设计，玩点数码，热爱折腾。
+    </div>
+    <footer class="entry-footer">
+        <div class="social-icons">
+    <a href="https://github.com/DolgenLyu" target="_blank" rel="noopener noreferrer me" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://space.bilibili.com/165016731" target="_blank" rel="noopener noreferrer me" title="Bilibili">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1.3333" y="6" width="21.333" height="15.333" rx="4" ry="4"/>
+    <path d="m8 12.4v1.2"/>
+    <path d="m16 12.4v1.2"/>
+    <path d="m5.8853 2.6667 2.6667 2.6667"/>
+    <path d="m18.115 2.6667-2.6667 2.6667"/>
+</svg>
+    </a>
+    <a href="https://weibo.com/u/7771537407" target="_blank" rel="noopener noreferrer me" title="Weibo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg>
+    </a>
+    <a href="index.xml" target="_blank" rel="noopener noreferrer me" title="RsS">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+    </a>
+</div>
+
+    </footer>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>模板写作法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>💡 模板只是起到规划文章走向的向导作用。在使用模板的基础上，在填充内容、词汇选择、表现方式以及文章体裁等方面再下些功夫，作者的个性会自然而然地散发出来，从而创作出扣人心弦的文章。 💡 写文章时不用模板，就好比没有设计图就想盖房子。若想建造坚固又完整的房子，设计图是必不可少的。 1️⃣写作模板就是写文章时的救星 写文章，要从写作模板开始学起
+写文章时应时刻提醒自己，要按照“易于读者理解的顺序”来写。
+起➡️承➡️转➡️合
+可以确定的一点是，在这个文章很容易被淹没的信息过载的时代，将结论置于最后的起承转合的写作顺序已经被淘汰了。
+2️⃣3种模板就足够了？ 💡 守破离”原指以剑道和茶道为首的武道以及艺道的“修行阶段”。“守”，是指最初阶段需遵从老师和流派的教诲，勤练基本功及技巧，达到熟练的境界。“破”，是指听取其他老师或流派的教诲，达到吸取精华并发展心术的境界。“离”，是指脱离某个流派后，独自创新招数，另开辟新境界。 本书传授的模板相当于守破离中的“守”。
+【模板1】无压力阅读的“列举型”
+提升信服度的“结论优先型”
+当你想重点传达核心内容时，这个模板再适合不过了。写作顺序为“A：结论→B：理由·依据→C：具体事例·详细内容→D：总结”。当你想通过文章得到读者的认同，就用这个“结论优先型”模板。
+易产生共鸣的“故事型”想通过故事记叙时就用这个模板。
+写作顺序为“A：消沉状态→B：转机→C：转变与成长→D：展望未来”。当你想唤起读者的共鸣时，就用这个“故事型”模板。
+3️⃣使用写作模板前需确认的5项内容 写这篇文章的目的是什么？
+想毫无遗漏地传达给对方信息时使用“列举型”，想提高说服力时使用“结论优先型”，想引起读者共鸣时选择“故事型”则更有效。或者也有使用组合型模板更有效的情况
+读者是谁？
+思考读者是谁是为了达成文章的目的，是确认读者的反应，理解他们的需求、认知及理解水平的关键过程。无论写什么文章，必须先明确读者是谁。
+读者的需求是什么？
+为了满足读者的需求，应该多和读者（对象）进行沟通，多关注读者、多一些调查和了解，这点很关键。未经交谈、观察或调研，仅凭空想象是很危险的。
+反过来说，即使写得有点生硬、粗糙，只要能满足读者的需要，文章的目的就很容易达成。
+希望读者作出怎样的反应？
+写作者不能交由读者决定该作出怎样的反应。读者的反应该由写作者决定。
+“决定读者的反应=设定目标。”当你设定完目标，大脑就会开始思考，为了达成这个目标我应该怎么做？
+读者的知识水平如何？
+写文章无非是使用易于捋清的顺序和易于理解的词汇向读者传递信息。尤其当编写你认为理所当然的事情（信息）时，需要特别注意。因为你认为的理所当然的事情可能并非是读者认为的理所当然。很多情况下，读者对这些事情是一无所知的。
+4️⃣写文章先从一行字开始 用一行文字传达不了的东西，用10行、100行都是无法传达的。这就是把握好中心思想的重要性。
+列提纲就是用一句话提炼每段内容的中心思想的过程。当无法列出提纲时，要意识到自己头脑尚处于混乱状态，需要先整理信息。
+写作就是将抽象概念和具体概念进行融合的过程。
+4.重要的是，写作者不能随心所欲地决定具体化的程度，而是需要结合读者的理解、认知水平而定。
+5️⃣简洁明了的“列举型”模板 💡 列举型模板是针对某一个主题、分成几个要点传达的模板。在文章开头部分表明接下来要传达的主题和列举的要点的数量后，再依次传达要点。 传达整体构思”也可以理解成“交出文本地图”。拿到“地图”的读者，通过了解话题的行进方向，可以专注地听下去。
+一、使用技巧 说明文章的写作意图
+在文章开头就明确表达讲什么、讲几点。
+列举的要点要简洁
+在列举要点时，每一部分开头要简单地写一下想分别传达的结论。
+总结时把共通项抽象化
+写文章的总结部分时，要意识到将所有的列举要点概括起来。
+列举的数量控制在2~7项
+列举型模板的第一步——传达整体构思中，建议列举2~7项内容。进一步说的话，因为奇数会给人一种紧凑感，所以一般多使用5或7这样的奇数。 某心理学研究表明，人在短时间内能够记住的记忆容量为7±2。 按照重要性由高到低的顺序排列
+将读者最重视的事项放在第一位，再按照重要性由高到低的顺序列举。
+分类别列举
+在存在多个类别的状态下使用列举型，不能把不同类别的列举点混在一起。一定要遵循先列举完类别1之后再列举类别2的顺序。
+在“整体构思”部分只阐述一个关键点
+通过“有一个……”这样的表达方式，能让对方觉得它非常重要。
+二、编排技巧 用列举型的形式整理的要点，会使读者对每个要点都记忆深刻。 如果是1000日元的产品，可能用5行到10行的文案就能卖得很好，如果没有相当的品牌力，用5行到10行的文案卖30000日元的商品是极其困难的。营销文案需要具备与价格相匹配的说服力。 当无法再进一步具体化时，说明掌握的信息不够充足。需要通过查资料、听取他人的意见、实地考察（亲自体验）等方式，收集写文章所需的素材。 6️⃣提升信服度的“结论优先型” 💡 “结论优先型”，顾名思义就是开门见山先说结论，再针对结论阐述详细的见解。按照“结论→理由→具体事例”的顺序写的文章更能提高读者的认可度。 推出结论的过程也是从头脑中的大量信息中提取有效信息并进行编辑的过程。提取的有效内容即是文章的主干，通过提前完成推出结论这一过程，可以防止写成“支离破碎的文章”。
+并不是说所有的信息都要写出来，而要为了读者能够正确地理解、认同，判断哪些信息需要发表，哪些信息需要隐藏。这个取舍和选择是写作者应具备的能力。另外，传达的顺序非常重要。写作者必须按照读者易于理解的顺序写，而不是自己想怎么安排就怎么写。
+一、使用技巧 用结论引起兴趣
+重要的是，要思考如何表达自己想讲的事情，才能引起读者“我想读！”的欲望。
+提供足够有说服力的理由或依据...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-11 16:49:38 +0800 CST'>July 11, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 模板写作法" href="https://zhen.media/post/blog/2022/%E6%A8%A1%E6%9D%BF%E5%86%99%E4%BD%9C%E6%B3%95/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>设计书籍清单
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>设计构成： 《艺术设计的平面构成》作者: (日）朝仓直巳 《艺术设计的色彩构成》作者: （日）朝仓直巳 《艺术设计的立体构成》作者: (日）朝仓直巳 《艺术设计的光迹构成》作者: [日]朝仓直巳 版式基础 《写给大家看的设计书》作者: Robin Williams 《平面设计中的网格系统》作者: 约瑟夫·米勒-布罗克曼 《今日排版：平面设计中的图文编排》作者: 善本出版有限公司 《超越平凡的平面设计：版式设计原理与应用》作者: [美] 麦克韦德 《超越平凡的平面设计：怎样做好版式-第2卷》作者: [美] 麦克韦德 色彩理论 《写给大家看的色彩书1——设计配色基础》作者: 梁景红（Relen） 编著 《写给大家看的色彩书2——色彩怎么选设计怎么做》作者: 梁景红 《配色设计原理》作者: 奥博斯科编辑部 《色彩设计——日本平面设计师参考手册》作者: Designing编辑部 《色彩设计的100个亮点》作者: 休·罗斯 《色彩感知学》作者: 周翊 《色彩设计的原理》作者: [日] 伊达千代 《设计中的色彩心理学》作者: 金容淑 史论类： 《世界现代设计史》
+《世界平面设计史》
+设计师通则类： 《写给大家看的设计书》
+《设计中的设计》
+《设计的觉醒》
+《设计心理学》
+平面基础类： 《图解平面设计规范：九大知识体系速查规范一目了然》
+《点线面》-康定斯基
+《艺术·设计的平面构成》
+《色彩构成》-约瑟夫•阿尔伯斯
+《设计基础原理》
+《美国视觉传达完全教程》
+《版式设计原理》
+《超越平凡的平面设计》，[美] 麦克韦德
+《国际平面设计基础教程:GRIDS网格设计》, Gavin Ambrose / Paul Harris
+《国际平面设计基础教程》, Gavin Ambrose / Paul Harris...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-11 01:53:59 +0800 CST'>July 11, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 设计书籍清单" href="https://zhen.media/post/blog/2022/%E8%AE%BE%E8%AE%A1%E4%B9%A6%E7%B1%8D%E6%B8%85%E5%8D%95/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>一把键盘
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>有段日子没有换一把键盘了。现在用的是CIY68&#43;BOX白，才一年壳就发黄了，轴体也没那么顺滑了。
+自从入坑机械键盘以后，对键盘的需求也就有了。配列真的是个大问题。98配列真的是码字、敲代码必备，F键区根本不能缺少。下面的什么84/86/68/61等等，虽然小，便携，精致，但使用起来都是很不方便，纯纯不适合我自己。
+关于无线化这件事，现在自己也看开了。用了快两年的无线键鼠，不管是几模的，总是遇到没电、失灵、断连、飘逸这些问题。打游戏的时候出现就不说了，畅快码字的时候出现也是很败兴的事儿。所以说回头还是要回归有线键鼠，稳定性实在是无可代替。
+轴体方面，这两年也试了一些了，感觉还是茶轴更适合自己。白轴很爽没错，但真的是有点吵。我是经常半夜码字的，总归怕打扰到睡觉的那位。而且有时候自己也很烦白轴的声音，还是茶轴略微舒服点。
+所以下一把键盘啊，肯定是有线、好茶轴和98配列。虽然我对键盘结构没有太大要求，但这一套下来就是贵，真的贵啊。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-11 01:38:49 +0800 CST'>July 11, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 一把键盘" href="https://zhen.media/post/blog/2022/%E4%B8%80%E6%8A%8A%E9%94%AE%E7%9B%98/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Hugo初体验
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>玩博客这么多年了，第一次用hugo这种需要手动敲点代码的框架类型。
+hugo毕竟是一个没有GUI界面的框架，和gridea相比确实麻烦不少，但也更加灵活了。
+对于普通用户来说，gridea只能够在有限的几种部署方式中选择，而且还没有提供实时预览功能，其封装的客户端时常会有加载缓慢和打不开的情况。这些在hugo这都不是问题。
+因为涉及到代码，hugo要硬核不少，想要自己修改主题都没那么容易，需得搞懂一整套目录结构和它所使用的标签语言。有些主题更是集合了多个前端工具，像我这种只会css和html的想完整使用起来都有些困难，毕竟文档大多都是英文，且没有介绍具体配置项的用途。想修改有多困难就更不必说了。
+但hugo给我的感觉更奇妙，这种自动构建的方式我很喜欢，而且主题的灵活性更加高。好好学习点前端技术，修改还是写自己的主题应该都是有机会的。
+目前我已经把自己这些年的blog全都搬进来了。不得不说，相比于之前使用CMS博客，md文档不在乎排版写起来真的会更爽，而且现在发布也更简单，同时还省去了服务器的开销，只需支付域名费就好了。
+下一件事就是挑一个性价比高的域名，持久用下去吧。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-10 03:00:30 +0800 CST'>July 10, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to Hugo初体验" href="https://zhen.media/post/blog/2022/hugo%E5%88%9D%E4%BD%93%E9%AA%8C/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>2022·618PC机箱选购个人推荐
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hello，大家好，我是阿圳。本来这期是想做个硬件推荐的，结果看了一圈发现内存固态主板要么没优惠，要么就缺货，要么小打小闹，真没啥意思。CPU也就AMD的5000系基本接近退市前的最低价，但这玩意儿毕竟要换代了了，所以我还是来说说机箱好了。建议：如果要买，掐住你的预算，认清你的需求。
+首先来看最受欢迎的MATX机箱部分，我会简单说一下挑几个说一下注意事项，其他的可以自己仔细看看相关评测开箱；
+第一个机箱，应该还是先马趣造，或者蓝宝石银角大王，理由就是它们作为MTAX机箱足够小。这个机箱最实惠的装法就是MATX主板&#43;ATX电源&#43;风冷，同时这也是我个人最推荐的装法，玻璃侧板也不需要买不需要买不需要买。选这个机箱基本放弃水冷，上水冷得选SFX电源得不偿失，可以直接考虑个好点的风冷，但因为前脸不进风，需要把上下后三处的风扇位装满。另外要注意的是，如果你的主板显卡插槽在第二槽位，那么大概率你就不能安装底部风扇了；如果USB3.0接口在主板底部也是要和风扇二选一的，需要看下你主板的布局。
+第二个机箱，酷冷Q300L，相较于趣造它可大了不少，但相较于常规MTAX还是略小些。它虽然是侧透，但是亚克力材质不怕碎，不过容易刮花。前脸全开孔，整体通风性非常好并且有全尺寸磁吸防尘网，想水冷可以安装在顶部和前侧，并且风冷限高也是159mm相当够用。但这个机箱因为开孔太多，还是很容易进灰的，要注意清理。另外板材也是略薄，但强度不错，比200内的机箱还是强不少。这个机箱最有意思的点在于它的侧板可以旋转安装，左右侧板还可以互换，所以IO位置有6个选择，满足你可能存在的各种需求。酷冷还有ATX机箱Q500L，作为同系列后面就不再说了。
+第三个机箱，乔思伯D30，这应该是继趣造以来最受欢迎的机箱，我那个视频播放都快5w我真是没想到啊。这个机箱，目前来说我觉得是MATX里面体积、兼容性都控制得最好的一个，它满足了长显卡、ATX电源和水冷共存。只不过长显卡下你的电源理线有点费劲，侧板上装硬盘的话接线有点麻烦。前面板给的type-c是和USB3.0共享主板接口的就很鸡肋。这个机箱你是必须把风扇位装满的，因为它这种垂直风道，全靠底部进风，所以风扇建议上大风量的，当然高负载时噪音也会高一些。另外也存在这种结构下显卡在第二槽会影响底部风扇位、或者USB3.0在底部影响一个风扇位的问题，所以主板不合适的话就别买了。
+然后进入ATX机箱部分。其实ATX机箱选择要比MATX大很多，通常价格也贵一些，我这里挑几个说一下。
+第一个追风者P500A，这应该是这个价位通风性最好、硬盘位（DLC）最多，颜值相对较高的ATX机箱。它顶部和前部都能安装360水冷（但不同时安装360水冷，毕竟只是个中塔），而且顶部支持厚冷排水冷，而且原机附送三把PWM ARGB风扇，不凑数，诚意还是拉满的，而且顶部给了Type-c 3.2接口，而且默认支持2x3.5寸硬盘&#43;3x2.5寸硬盘，而且如果你有需要可以拓展到10x3.5硬盘位，当然，得加钱。就是说这个机箱如果你买了，可以当硬盘服务器用，可以当传家宝用。 甚至，如果有直播推流的需求，换一个更好的电源就可以在这个机箱顶部装一个ITX主板配一个带核显的CPU然后去推流了，真就是传家宝级机箱，咋用都够用。
+第二个，爱国者K1，没有P500A那么强，但没有很多可能用不到的功能它的价格就比较亲民了。而且K1属于爱国者的产品线里做工比较好的机箱，你能懂的。K1也支持360水冷，180mm限高的风冷，而且它的侧壁还能挂两个12cm风扇，虽然不是很有必要但你可以把240水冷挂在这。当然它的拓展性就不高了，硬盘位比较少，而且IO也只给了一个USB3.0，没有type-c，但配合入门级主板这些应该也都是够用的。
+第三个，安钛克P10 Flux，或者P101-s，这俩的区别就是101-S更偏重于服务器，它也能装很多硬盘；P10更偏向普通用户，显卡下面留了反叶风扇的位置。看这俩傻大黑粗的样子就知道就是静音机箱了，只不过现在静音机箱的隔音棉都跟以前的那种材质不同，因此隔音效果我总觉得不够好。这里的P101-S还是老款隔音棉，如果你喜欢这种机箱，我个人更推荐这个。
+ITX机箱部分，其实能说的太多了，我这里就不再一一展开细说，有些我单独做过视频的感兴趣可以去看。那么我就笼统分析一下，ITX机箱的体积和兼容性是两大硬伤，因此不要盲目追求体积最小化，免得得不偿失。硬件的高功率带来的发热和噪音这两大问题，是涉及到主板、电源、显卡、CPU的综合问题，只有整个行业发生改变和进步才可能解决的。目前CPU和显卡都在堆功耗换性能，电脑只会越来越热，体验良好的轻量级ITX电脑可选的硬件很有限，倒不如想想是不是非要弄个ITX，在便携上笔记本也许是个更好的选择，性能上小体积的MATX电脑或许是更具性价比的选择。
+好了，以上就是本期618机箱推荐的视频了，希望对你有用，记得点赞投币，我是阿圳，下期再见，拜拜！</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-08 14:48:56 +0800 CST'>July 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 2022·618PC机箱选购个人推荐" href="https://zhen.media/post/video/2022/6182022-618pc%E7%A1%AC%E4%BB%B6%E9%80%89%E8%B4%AD%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>2022·618千元ITX主板
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hello，大家好，我是阿圳。实话实说今年618优惠力度不大，大家应该感觉到了。不过好消息是现在入门级ITX主板的价格下来了，有一点点小卷的迹象。但其实ITX主板算上两槽显卡后并不比这期统计了7块千元内的ITX主板，如果你想组一个轻度游戏机或者APU主机，那就是非常合适的。
+首先看一下这张统计表，华擎占了3个位置，没办法华擎一直就有这些产品线，虽然不妖但是够用，七彩虹、帮主铭瑄最近两年在ITX主板上也开始发力了，精粤虽然小厂但它的H610i价格很香而且用料还行，映泰嘛虽然现在竞争力不够但实力还是有的，东西不用太担心。后面我每一个都简单说一下，不求最便宜和最贵，希望你能买到适合自己的。
+铭瑄挑战者，559元的价格没得说了，供电不用看也够用，它还给了2.5G有线网口，4个4pin风扇接口，其实这就非常不像H610主板了，所以它就砍了USB接口，后面只有三个2.0，两个3.0，如果机箱上的USB接口少的话，确实可能会不够用。另外它的散热装甲不多，属于凑合的水平。但是它给了两个HDMI&#43;一个DP，这就是典型的核显多屏办公用主板。同时这个价格买回去做NAS主板其实也是蛮好的，因为它有2.5G网口，但毕竟芯片有点新，兼容性不知道怎么样。搭配到12400其实就行了，12700也可以带，但有点浪费CPU，毕竟H610不支持PCIE4.0固态也挺可惜的。
+华擎B660M-ITX/AC，作为入门的ITX主板，华擎AC系列肯定是不如PG系列的，没有足够的散热装甲、有线网卡只给到千兆、后面4个USB接口也很抠门，给了个前置type-c结果是USB3.0的实在没必要，它就是附带了一个无线网卡，还是wifi5的，好在它给了个5V RGB接口，可以简单玩玩灯，但总体优势不大，性价比其实不算高。
+精粤这个H410i已经有人做测试了，也有人在推，就是属于价格够香，配置够用的档位，挑毛病的话其实USB接口少、风扇接口只有俩、没有RGB、机箱IO那几个接口的位置，不装显卡走线很丑，装显卡压线很难受。但是考虑到420元的价格，那倒也不是不能接受了，就是目前售后怎么样还不太清楚，所以虽然便宜但要入手还是稍微谨慎一些。
+七彩虹这个B660I在天猫，现在好像又不单独卖了，需要跟CPU一起买，但是价格好像也低不少。有全覆盖散热装甲、一体IO挡板，外加银色这就非常漂亮了，2.5G有线网卡，3个4pin风扇，6个USB和5V RGB，有两个m.2接口，分别是3.0和4.0，这就是以往千元内ITX主板基本不存在的配置了。一个槽点就是前置type-c是USB3.2 gen1也就是5Gbps的USB3.0，意义确实不大。虽然这块板子堆了点料，你也别指望它能CPU超频，内存还是能上一上高频的，但是肯定也要看内存本身的素质，适合追求内存高频率的玩家，有些游戏像绝地求生对这个就很敏感。
+来到AMD主板这边，特别是华擎的产品我首先要提醒一下，你在京东买回去的主板是有可能点不亮CPU的，因为库存的主板BIOS太老，不能识别5000系特别是新出的5500/5700x/5600G/5700G这些CPU的可能性很大，就需要返厂刷BIOS，一来一回半个月一个月都有可能，很麻烦，买之前可以问问客服现在BIOS版本什么情况。淘宝很多卖家是可以帮忙刷新BIOS的，相对人性化一点。A520M-ITX/AC说实话中规中矩，就内存支持高一点，其他的真没有什么出彩的地方，CPU供电的位置还很特别。但是考虑到华擎B550M-ITX/AC和它基本就是换个芯片组的情况，还是它相对更有性价比一点。
+但是你再看看多年前的A320M-ITX/AC还在卖，最近AMD也下放了限制，A320芯片可以支持5000系CPU了，更新最新的BIOS就行。但是A320M-ITX/AC是intel的i211AT千兆网卡，这是当年明星网卡，声卡也是7.1声道的，除了内存频率低一点并不比A520MITX/AC差，还便宜了200块，所以讲道理这块板子更适合装个wifi6无线网卡去做APU主机用。从这你也能看到华擎这几代AMD的低端ITX主板没竞争就没进步，甚至还小幅退步了。
+所以映泰也搞出来一个B550I的板子，4933Mhz内存，8相供电，2.5G有线网卡，USB接口不少，无线网卡的天线配好，甚至5V和12V RGB都给了，价格还比你华擎A520芯片低10块钱。说实话这个价位用不到B550芯片，因为PCIe4.0的显卡和3.0没差别，4.0固态价格还没下来，相当于说就是为了追求这个4933Mhz的内存，但是相比于微星和华硕的旗舰ITX主板，这些主板能上多高的频率更考验内存，颗粒不明的内存能开个X.M.P.就不错了。但毕竟映泰价格便宜啊，这些就都不算大问题了。AMD这边的选择少，因为做AMD ITX主板的就少，昂达这种丐到不行的不算，低端几乎只有华擎自己在做，往往性价比比不上的微星和华硕的二手旗舰ITX主板。像B450i现在还能卖到400-500块，但实在退市太久了，二手鱼的基本都过保了，风险有点大，我是不敢推荐普通用户去买。入门去用华擎A320M-ITX/AC更新个BIOS就是挺香的，毕竟售后有保障。
+最后，再多说一点，相比于MATX主板，ITX主板真的没有小多少，价格尽管相较以前低了一些但还是不能跟MATX比，所以还是谨慎考虑一下。当然，对于组办公核显机和APU主机来说，那是十分合适的，还可以去看看迎广肖邦PRO机箱。
+好了以上就是本期ITX主板的视频了，希望对你有用吧，记得点赞投币，我是阿圳，我们下期再见，拜拜！</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-08 14:48:56 +0800 CST'>July 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 2022·618千元ITX主板" href="https://zhen.media/post/video/2022/618618%E7%9A%847%E4%B8%AA%E5%8D%83%E5%85%83%E5%86%85itx%E4%B8%BB%E6%9D%BF%E5%8F%AF%E9%80%89%E9%A1%B9%E5%85%A5%E9%97%A8%E7%94%A8%E6%9C%80%E5%A5%BD%E4%BA%86/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>CloudFlare与https的一些注意事项
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 一、宝塔面板 宝塔面板的web服务是python搭建的，不支持cloudflare的CDN，代理域名需要点掉云盾，不使用cf的CDN，等待缓存完成就可以了正常访问了。
+又或者，在宝塔版本7.9.0的设置中，发现了面板云端请求方式可以修改为PHP，但是否可以解决CF CDN访问的问题尚未测试。
+二、Github Pages Github Pages目前已经支持自定义域名的https了，但在套用cloudflare的情况下仍需注意应按照以下方案操作：
+域名绑定到cloudflare的DNS解析后，点掉云盾图标。 Github Pages页面绑定域名，然后会自动申请并绑定ssl证书，等待操作完全即可 。 打开cloudflare的DNS解析后的云盾即可使用CDN服务。 cloudflare的SSL/TSL设置中需要选择完全模式。 </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-08 14:48:56 +0800 CST'>July 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to CloudFlare与https的一些注意事项" href="https://zhen.media/post/blog/2022/%E8%B7%9Fcloudflare%E6%9C%89%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E5%84%BF/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>使用CloudFlare开启免费自定义域名邮箱
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>偶然发现cloudflare提供了Beta版本的电子邮件功能，目前还是免费的。简单来说就是只要你把域名交给了cloudflare解析，那么就可以生成自己域名为后缀的邮箱了，如域名：myname.com，那么邮箱就可以为DIY@myname.com，DIY处任意填写。
+当然，事实上cloudflare并没有提供邮箱服务，这个邮箱只是中转名称而已，你还是需要一个实际的收件邮箱。实用性不能算聊胜于无，起码逼格够了，不过安全与隐私性目前不得而知。
+1.将域名DNS解析到cloudflare ​	这个操作应该不用说了吧，到购买域名的服务商那把域名DNS服务器更改成cloudflare就好了。
+类型 值 NS brad.ns.cloudflare.com NS tori.ns.cloudflare.com 2.创建自定义邮箱地址与目标地址 自定义地址就是想要生成的逼格地址，后缀为你的域名。
+目标地址就是收件地址了，填写自己最常用的邮箱就好。
+填写完毕后，你的目标邮箱会收到验证邮件，需要点击验证链接完整验证。
+3.解析邮件DNS记录 给域名添加MX解析，这些都是给邮箱用的，后台有一键填写，填写完成后会出现绿色的路由已启用提示。
+4.测试并开始使用吧。 查看后台可以发现，自定义地址和目标地址都不唯一，可以添加多个，意味着自定义邮箱也可以创建很多的，并且指向不同收件邮箱，实用性拉满，再加上目前该功能免费，其实还是不错的。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-08 14:48:56 +0800 CST'>July 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 使用CloudFlare开启免费自定义域名邮箱" href="https://zhen.media/post/blog/2022/%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>光影
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-08 14:48:56 +0800 CST'>July 8, 2022</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 光影" href="https://zhen.media/post/blog/2022/%E5%85%89%E5%BD%B12022/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>博客迁移那些事儿
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>第一次接触独立博客这件事还是2014年吧，偶然间在网易云课堂看见ID为三乐大掌柜的人做了几个视频，介绍如何用虚拟主机搭建wordpress博客，很欢喜，正好那个时候就很喜欢写日志，于是就跳进了独立博客这个大坑。
+彼时的wordpress还不大完善，用着还不是很舒服，UI也很古老的感觉。于是也接触到了JSP脚本的博客程序，还记得那个叫熊海博客，现在已经找不到了。还好当时买的阿里云的虚拟主机，能够支持win和linux两种转换，所以就能支持PHP和JSP两种类型了。
+再后来用着用着，以后接触到了Typecho，很简洁。但说实话，也很简陋啊。直到遇见了Handsome pro主题，算是救活了这个程序，现在都不知道有多少用Typecho的人都在用这个主题了，也算为这个八百年不更新的博客程序续命了。顺便说一下，这个博主本科的时候更新还很频繁的，我也是入正以后一点点看着这个主题完善起来。他大四开始这个主题更新就不怎么频繁了，功能也逐渐稳定了，现在大概每年更新1、2个大版本就不错了。这个主题也是用着用着，就觉得太臃肿了，已经显然不再契合typecho简洁的初衷，所以我也开始寻找其它主题。
+这期间陆陆续续接触到了VPS，了解了国内外的VPS价格，知道相比于国内腾讯云、阿里云这样的高价服务商，国外的搬瓦工、www.vultr.com等等。我知道的时候早都被那些搞VPN的玩坏了，流量降低、带宽限速、国内封锁IP等等时有发生。但国内毕竟要备案，麻烦得很，所以还是买了搬瓦工的，他们家后台的UI很世纪初，但服务还挺稳，就这么用着吧。
+##wordpress
+其实从博客来讲，wordpress可能是最合适的程序了，因为你想要的它都能实现，而且有着最丰富的主题、插件资源，无可比拟。但另一方面来说，wordpress还是略微臃肿了，后台反应总是不够畅快，而且对于markdown的支持非常不好，就算有插件体验也不好，还有最大的问题是导出只能是XML，博客迁移性没有markdown来得好。
+国内用户基本都要安装一个插件就是wpjam-basic了，功能很全，邓总疯狂更新，而且完全免费。
+国内比较好的主题商就是大胡子的新主题了，价格不贵，售后没的说，主题类型也很多，但是主题发布一年后就不怎么再更新了。当然新主题也提供了几个免费主题，像sweet就很不错的。我买的Autumn-Pro，但归我而言功能过于丰富了，新鲜过后也会觉得过于臃肿，所以就不再使用了。
+我现在在用的主题是Hoffman，开发者好像是个瑞典人，审美很不错，也开发了很多免费主题，只不过对英文支持较好，所以中文排版并不是很舒服。我把Hoffman修改了一些，变得更适合中文排版，现在就在用这个主题。
+Halo博客 Halo是前段时间冲浪意外刷到的，格外简洁，并且后端适配markdown，支持配置图片CDN，用起来非常舒服。Halo是基于java开发的，主题不是很多，插件系统还没有开发，现在基本靠js。主题开发相对于wordpress更简单，模板引擎基于Freemarker，不过官方文档显然不是很全，我这种半吊子一知半解，只能魔改别人的主题，自己不能从头写，因为有些变量文档里没提供。
+Halo有一个问题，就是部署麻烦些，需要linux命令部署，或者用docker，直接劝退大半人。它运行起来还比较耗资源，所以最终我还是换回了Wordpress。它的主题里有一个我最喜欢的，Zozo，基本就是一页纸的样式。我也是对它稍加魔改。因为手机端CSS样式太普通，所以干脆去掉了对移动端的适配。不过这些当我选择删除程序的时候就已经全部没有了。
+Halo还有个好处就是支持将内容导出为md文件，可以很好地兼容本地备份和其他程序。
+Gridea与Github Pages 用Github Pages写博客是很多人的选择，最大的原因是不用买服务器，完全免费。极客们直接手撸代码git命令就能写博客了，但普通人还是要借助其他程序，把md文件渲染成html，然后配合Gitalk完成博客搭建。这些程序里，Hexo、jeklly比较有名，但配置相对麻烦些。所以当初见到Gridea的时候我是很兴奋的。
+只是Gridea也很简陋，这是因为Github Pages只是一个静态网页服务，只能做到这样了。彼时我还对主题的漂亮和插件丰富很是看中，所以也没有很心动。最近兜兜转转，放弃了Halo以后就果断拥抱了Gridea，目前作为第二博客阵地。主要也是新买的AX6S路由器，搞了一通以后可以跑clash，现在家里的网络环境比较科学，而且我的博客不在乎有没有别人看，所以Github Pages用起来也很舒服了。
+当前写作流程和备份方案 Typora作位本地写作工具，管理我所有的写作内容。这个软件很好用，买断也不贵，可以直接插入粘贴板的截图并上传到图床。 Wordpress作为第一博客，主要是目前服务器还没到期。安装md编辑器实现渲染兼容。 Gridea作为第二博客。它的文件是需要自己生成的，这样才能有meta内容。 腾讯云COS作为第一图床（白嫖），SM.MS作为第二图床。 本地文件全部用坚果云备份。 移动端写作体验不好，完全放弃。 其他内容使用notion管理，有时间单独写这个软件吧。 转眼也折腾了有7、8年了，总算是找到了比较舒服的一套流程。然而我对于写博客的热情也慢慢消散了。
+在安静的午后泡一杯茶，坐在电脑前打开软件开始写作，独享一份惬意的时光。那种期待还是有的，但那份心境，却是越来越远了。长大以后很多话想着想着就不想写了，有些事也不愿意记录了。更多的时候，其实还是自己变懒了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-08 14:48:56 +0800 CST'>July 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 博客迁移那些事儿" href="https://zhen.media/post/blog/2022/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://zhen.media/page/2/">Next »</a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://zhen.media/">ZHEN</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
