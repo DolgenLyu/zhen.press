@@ -195,6 +195,25 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Hugo部署后css失效的问题
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>使用hugo有几天了，从最开始的一团糟到现在算是能够完整部署到服务器端而不出现问题了。结果虽然是好的，但这个过程其实挺折腾，毕竟好几个睡不着的晚上都在跟自己并不懂的事情做斗争，一遍又一遍尝试。唉，不能系统学习前端知识就是这样的。
+这次遇见的问题就是我使用的主题PaperMod有些样式我不是很满意，需要自己修改。于是我相当然地认为直接修改各个part的css文件就可以。然后这样的结果是只要你修改了主题里的那些css文件，重新生成静态资源并部署到githubpage等地方，就会出现css样式无法加载的问题。
+之前根据我从网上寻找的答案，很多人都说css样式丢失是部署出的问题，重新按照手动git方式部署就可以解决。我尝试了几次，都没有解决。而其中有两次我是把站点删除重新建立的，误打误撞就没问题，以为真的可以解决。然而再一次修改css文件后，部署后访问起来css又丢失了。
+这个问题还没那么好发现，因为我电脑端的chrome浏览器缓存了之前的css，所以当我修改了css文件并部署到远程以后，按理来说应该网站应该没有样式了。但缓存这个时候生效，导致我前几天一直没发现这个问题。反而是手机上访问一直没有样式，我还以为是hugo部署的问题，没能兼容移动端的css。
+刚刚又在搜索，然后意外发现有人在谈custom styles——自定义样式的问题，我才觉得恍然大悟。一定是我不应该直接修改主题的css文件。而这个主题也果然有预留的blank.css文件，就是专门留给用户的。
+于是将我的自定义样式迁移到这里，然后重新push一下静态资源，再次访问网站，果然一切都正常了。
+尽管其中的原理我还不是很明白，因为js和css框架我都没学。但其实早就该想到这个点，因为主题这个东西作者在docs上一开始就写了升级方式。显然我这种直接修改主题文件的方式，一旦升级就GG了。
+少走弯路的唯一捷径，还是系统学习。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-13 00:47:22 +0800 CST'>July 13, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to Hugo部署后css失效的问题" href="https://zhen.media/post/blog/2022/hugo%E9%83%A8%E7%BD%B2css%E9%97%AE%E9%A2%98/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>模板写作法
     </h2>
   </header>
@@ -398,22 +417,6 @@ Gridea与Github Pages 用Github Pages写博客是很多人的选择，最大的�
   </div>
   <footer class="entry-footer"><span title='2022-04-08 14:48:56 +0800 CST'>April 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to 生活中没有那么多奇迹" href="https://zhen.media/post/blog/2022/%E7%8E%B0%E5%AE%9E%E7%94%9F%E6%B4%BB%E4%B8%AD%E6%B2%A1%E9%82%A3%E4%B9%88%E5%A4%9A%E5%A5%87%E8%BF%B9/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>观 《蜘蛛侠·英雄无归》
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>这部片子，感觉很怪，故事的逻辑不是很好理解了。我没有看新蜘蛛侠前两部是什么设定，也许彼得·帕克就是个惹麻烦加擦屁股的人设？两个逻辑我实在理解不了。
-一、神秘博士是个不可能被劝服的老顽固？ 尽管对于18岁的彼得来说，挽救那些反派是他认为对的事儿，而且努力去做了，而且成功了，好似一个完美的理想主义者以德报怨的成功故事。但抛开救人合理与否一层不谈，彼得有没有更好的方式实现他的目的呢？把那么强大的神秘博士禁锢在镜像时空而不是努力劝说其成为队友这是否合理？（关于这一点最后另外两个蜘蛛侠其实也问到了）
-这样强行让主角扛大旗的设定了，逻辑上实在说不通。因此这个故事说到底还是个人英雄主义的内核，主角一定要自己承担自己成长自己挽救世界，并且和以往不同的是，在这一部里MJ和内特的作用其实真的微乎其微，单纯是穿插感情线的。
-二、挽救反派是否干涉平行时空且可能造成更大危害？ 就我们所有接触到的科幻概念中，尽最大可能不干涉平行宇宙的事物几乎是一个宗旨了。好家伙，这里直接挽救若干大反派？这样的操作就不考虑可能会对平行时空可能造成更大的影响？最有意思的是这部片子中似乎所有人都没觉得有问题，反而一股脑支持主角一意孤行。真就是被主角强大的道德使命感征服了呗。
-其实三代蜘蛛侠齐聚，情怀有了，看点有了，但这个从起因到完成都显得很幼稚的故事，我个人实在有点接受无能。</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-03-08 14:48:56 +0800 CST'>March 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to 观 《蜘蛛侠·英雄无归》" href="https://zhen.media/post/blog/2022/%E8%A7%82-%E8%9C%98%E8%9B%9B%E4%BE%A0%E8%8B%B1%E9%9B%84%E6%97%A0%E5%BD%92/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

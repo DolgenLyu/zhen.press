@@ -148,6 +148,25 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>Hugo部署后css失效的问题
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>使用hugo有几天了，从最开始的一团糟到现在算是能够完整部署到服务器端而不出现问题了。结果虽然是好的，但这个过程其实挺折腾，毕竟好几个睡不着的晚上都在跟自己并不懂的事情做斗争，一遍又一遍尝试。唉，不能系统学习前端知识就是这样的。
+这次遇见的问题就是我使用的主题PaperMod有些样式我不是很满意，需要自己修改。于是我相当然地认为直接修改各个part的css文件就可以。然后这样的结果是只要你修改了主题里的那些css文件，重新生成静态资源并部署到githubpage等地方，就会出现css样式无法加载的问题。
+之前根据我从网上寻找的答案，很多人都说css样式丢失是部署出的问题，重新按照手动git方式部署就可以解决。我尝试了几次，都没有解决。而其中有两次我是把站点删除重新建立的，误打误撞就没问题，以为真的可以解决。然而再一次修改css文件后，部署后访问起来css又丢失了。
+这个问题还没那么好发现，因为我电脑端的chrome浏览器缓存了之前的css，所以当我修改了css文件并部署到远程以后，按理来说应该网站应该没有样式了。但缓存这个时候生效，导致我前几天一直没发现这个问题。反而是手机上访问一直没有样式，我还以为是hugo部署的问题，没能兼容移动端的css。
+刚刚又在搜索，然后意外发现有人在谈custom styles——自定义样式的问题，我才觉得恍然大悟。一定是我不应该直接修改主题的css文件。而这个主题也果然有预留的blank.css文件，就是专门留给用户的。
+于是将我的自定义样式迁移到这里，然后重新push一下静态资源，再次访问网站，果然一切都正常了。
+尽管其中的原理我还不是很明白，因为js和css框架我都没学。但其实早就该想到这个点，因为主题这个东西作者在docs上一开始就写了升级方式。显然我这种直接修改主题文件的方式，一旦升级就GG了。
+少走弯路的唯一捷径，还是系统学习。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-13 00:47:22 +0800 CST'>July 13, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to Hugo部署后css失效的问题" href="https://zhen.media/post/blog/2022/hugo%E9%83%A8%E7%BD%B2css%E9%97%AE%E9%A2%98/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>Hugo初体验
     </h2>
   </header>
@@ -332,32 +351,6 @@ Gridea与Github Pages 用Github Pages写博客是很多人的选择，最大的�
   </div>
   <footer class="entry-footer"><span title='2020-12-31 14:48:56 +0800 CST'>December 31, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to 我的2020" href="https://zhen.media/post/blog/2019-2021/%E6%88%91%E7%9A%842020%E4%B8%8A/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>一些决定
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>我要做UP 今天醒来第一件事是摸摸手机，然后再次翻看了一下昨晚没有决定的那几个麦克风。
-当我看到博雅PM700各种叠加优惠以后能够以一个比较优秀的价格拿到手的时候，就不再犹豫了。买就是了。
-主机折腾了一个多月算是踏实了以后，萌生了做up主的念头。于我而言，一旦这个念头萌生，那么就会萦绕心头迟迟不去。我能做的就是不断思量，最终做出一个合适的决定。经过几天的思考以后，我决定去做。
-体验过做主播，做一个up相对而言要轻松一些，毕竟不用对着电脑持续不断地输出。当然，后期也可能会再度直播，这都是说不准的事儿。
-做up，对于传媒专业的我而言基础技能是都会的，设备挑物美价廉的随便买买就好，毕竟家境贫寒啊。
-然而这个决定给我带来的最大的难点就是，我到底要做一个什么类型的up。这实在是太难了。
-游戏类？我并不是一个高玩，而且我对游戏并没有一种痴狂的热爱，很多游戏上手几天就不会再玩了，再加上手残党属性，这几乎只能是自己偶尔用来凑素材的出路而已。
-科技类？家境贫寒，靠着信用卡和白条凑出来的主机和外设还要慢慢还，根本就没有更多的钱用来买新产品做评测啊！！！谁会赞助一个萌新up呢。sad…….
-生活类？……一言难尽啊，毕竟自己不是个多么有趣的人诶，哪里有那么多有意思的话题产出。
-头大。
-几天以后我忽然想明白，其实很多事也不一定要一开始就想的清清楚楚。这世上根本就没什么事儿能按照计划发展啊，又不是在演电视剧。想去做那就去做好了啊，想到哪做到哪，做起来也许一切就有转机啊。
-干就是了！！！
-创业项目 年前和朋友一起计划发起的一个社群项目，也算是自己的第一个创业项目了。最近仔细思考，也许会在年内注册个公司来做，这样会有很多的方便。时间上来看，我们都是比较忙的，所以这件事做起来肯定也会有难度，再加上我们其实也没有很多的经验，所以也就是尝试去做吧，尽力而为，听天命好了。
-厘清各种杂乱的思绪就会开心很多。一个人的时候最适合想各种各样的事情，慢慢一切都能自我化解。我很喜欢这样的时光。今天女票加班，一个人在家正好可以思考很多事儿。一点一点，生活就会回归正轨啦。
-up！up！up！</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-07-08 14:48:56 +0800 CST'>July 8, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to 一些决定" href="https://zhen.media/post/blog/2019-2021/%E4%B8%80%E4%BA%9B%E5%86%B3%E5%AE%9A/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
