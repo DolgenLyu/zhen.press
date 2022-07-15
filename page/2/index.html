@@ -11,7 +11,7 @@
 <meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
 <meta name="author" content="Theme PaperMod">
 <link rel="canonical" href="https://zhen.media/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8c6a8e0481679dc91652562848fb326f56474cdbf814c7c7fac086e41cd71ea9.css" integrity="sha256-jGqOBIFnnckWUlYoSPsyb1ZHTNv4FMfH&#43;sCG5BzXHqk=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f777eb87bdf4a52af6271240697c93da1a73126c53e0b2ea40ac67b44f107d6a.css" integrity="sha256-93frh730pSr2JxJAaXyT2hpzEmxT4LLqQKxntE8QfWo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zhen.media/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zhen.media/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zhen.media/favicon-32x32.png">
@@ -124,18 +124,8 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://zhen.media/archives" title="Archive">
-                    <span>Archive</span>
-                </a>
-            </li>
-            <li>
                 <a href="https://zhen.media/categories/" title="Categories">
                     <span>Categories</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://zhen.media/search/" title="Search (Alt &#43; /)" accesskey=/>
-                    <span>Search</span>
                 </a>
             </li>
             <li>
@@ -143,10 +133,59 @@
                     <span>Tags</span>
                 </a>
             </li>
+            <li>
+                <a href="https://zhen.media/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>博客迁移那些事儿
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>第一次接触独立博客这件事还是2014年吧，偶然间在网易云课堂看见ID为三乐大掌柜的人做了几个视频，介绍如何用虚拟主机搭建wordpress博客，很欢喜，正好那个时候就很喜欢写日志，于是就跳进了独立博客这个大坑。
+彼时的wordpress还不大完善，用着还不是很舒服，UI也很古老的感觉。于是也接触到了JSP脚本的博客程序，还记得那个叫熊海博客，现在已经找不到了。还好当时买的阿里云的虚拟主机，能够支持win和linux两种转换，所以就能支持PHP和JSP两种类型了。
+再后来用着用着，以后接触到了Typecho，很简洁。但说实话，也很简陋啊。直到遇见了Handsome pro主题，算是救活了这个程序，现在都不知道有多少用Typecho的人都在用这个主题了，也算为这个八百年不更新的博客程序续命了。顺便说一下，这个博主本科的时候更新还很频繁的，我也是入正以后一点点看着这个主题完善起来。他大四开始这个主题更新就不怎么频繁了，功能也逐渐稳定了，现在大概每年更新1、2个大版本就不错了。这个主题也是用着用着，就觉得太臃肿了，已经显然不再契合typecho简洁的初衷，所以我也开始寻找其它主题。
+这期间陆陆续续接触到了VPS，了解了国内外的VPS价格，知道相比于国内腾讯云、阿里云这样的高价服务商，国外的搬瓦工、www.vultr.com等等。我知道的时候早都被那些搞VPN的玩坏了，流量降低、带宽限速、国内封锁IP等等时有发生。但国内毕竟要备案，麻烦得很，所以还是买了搬瓦工的，他们家后台的UI很世纪初，但服务还挺稳，就这么用着吧。
+##wordpress
+其实从博客来讲，wordpress可能是最合适的程序了，因为你想要的它都能实现，而且有着最丰富的主题、插件资源，无可比拟。但另一方面来说，wordpress还是略微臃肿了，后台反应总是不够畅快，而且对于markdown的支持非常不好，就算有插件体验也不好，还有最大的问题是导出只能是XML，博客迁移性没有markdown来得好。
+国内用户基本都要安装一个插件就是wpjam-basic了，功能很全，邓总疯狂更新，而且完全免费。
+国内比较好的主题商就是大胡子的新主题了，价格不贵，售后没的说，主题类型也很多，但是主题发布一年后就不怎么再更新了。当然新主题也提供了几个免费主题，像sweet就很不错的。我买的Autumn-Pro，但归我而言功能过于丰富了，新鲜过后也会觉得过于臃肿，所以就不再使用了。
+我现在在用的主题是Hoffman，开发者好像是个瑞典人，审美很不错，也开发了很多免费主题，只不过对英文支持较好，所以中文排版并不是很舒服。我把Hoffman修改了一些，变得更适合中文排版，现在就在用这个主题。
+Halo博客 Halo是前段时间冲浪意外刷到的，格外简洁，并且后端适配markdown，支持配置图片CDN，用起来非常舒服。Halo是基于java开发的，主题不是很多，插件系统还没有开发，现在基本靠js。主题开发相对于wordpress更简单，模板引擎基于Freemarker，不过官方文档显然不是很全，我这种半吊子一知半解，只能魔改别人的主题，自己不能从头写，因为有些变量文档里没提供。
+Halo有一个问题，就是部署麻烦些，需要linux命令部署，或者用docker，直接劝退大半人。它运行起来还比较耗资源，所以最终我还是换回了Wordpress。它的主题里有一个我最喜欢的，Zozo，基本就是一页纸的样式。我也是对它稍加魔改。因为手机端CSS样式太普通，所以干脆去掉了对移动端的适配。不过这些当我选择删除程序的时候就已经全部没有了。
+Halo还有个好处就是支持将内容导出为md文件，可以很好地兼容本地备份和其他程序。
+Gridea与Github Pages 用Github Pages写博客是很多人的选择，最大的原因是不用买服务器，完全免费。极客们直接手撸代码git命令就能写博客了，但普通人还是要借助其他程序，把md文件渲染成html，然后配合Gitalk完成博客搭建。这些程序里，Hexo、jeklly比较有名，但配置相对麻烦些。所以当初见到Gridea的时候我是很兴奋的。
+只是Gridea也很简陋，这是因为Github Pages只是一个静态网页服务，只能做到这样了。彼时我还对主题的漂亮和插件丰富很是看中，所以也没有很心动。最近兜兜转转，放弃了Halo以后就果断拥抱了Gridea，目前作为第二博客阵地。主要也是新买的AX6S路由器，搞了一通以后可以跑clash，现在家里的网络环境比较科学，而且我的博客不在乎有没有别人看，所以Github Pages用起来也很舒服了。
+当前写作流程和备份方案 Typora作位本地写作工具，管理我所有的写作内容。这个软件很好用，买断也不贵，可以直接插入粘贴板的截图并上传到图床。 Wordpress作为第一博客，主要是目前服务器还没到期。安装md编辑器实现渲染兼容。 Gridea作为第二博客。它的文件是需要自己生成的，这样才能有meta内容。 腾讯云COS作为第一图床（白嫖），SM.MS作为第二图床。 本地文件全部用坚果云备份。 移动端写作体验不好，完全放弃。 其他内容使用notion管理，有时间单独写这个软件吧。 转眼也折腾了有7、8年了，总算是找到了比较舒服的一套流程。然而我对于写博客的热情也慢慢消散了。
+在安静的午后泡一杯茶，坐在电脑前打开软件开始写作，独享一份惬意的时光。那种期待还是有的，但那份心境，却是越来越远了。长大以后很多话想着想着就不想写了，有些事也不愿意记录了。更多的时候，其实还是自己变懒了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-08 14:48:56 +0800 CST'>July 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 博客迁移那些事儿" href="https://zhen.media/post/blog/2022/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>生活中没有那么多奇迹
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>本着可能不太好看的想法去看的《奇迹·笨小孩》，果然不让我失望。
+回来睡醒再琢磨这部片子传达的价值观，其实是有些问题的。主角从头到尾都只是个近乎一无所有的赌徒，而且在拼死一搏。不管故事给出了怎样看似合理的苦衷，主角的经历都绝不能称之为一种正常的奋斗和打拼。因此不管主角的经历再怎么苦，也和我们中国人强调的吃苦耐劳，勤劳勇敢并不能混为一谈。不然你置我们亿万穷苦农民于何地？
+但我们并不能否认这种生活可能性的存在，事实上我们更清楚比这还要艰苦且没能成功的故事才是现实中的大多数。然而现实中的故事我们只能说这原本就是生活的艰难，是底层人民关于活着这件事本身的挣扎。
+但这个故事不一样，因为它是一碗毒鸡汤。它把千万人民艰苦生活缩影中的一个拎了出来，经过艺术加工，又给与了主角诸多跳板，搭建了一个本质上是成功学的励志故事。然后它告诉你要相信奋斗，相信希望。然而现实中这十多年国内手机厂商巨头厮杀剧烈，最终幸存者都无几，你告诉我我该怎么相信这样一个翻新机拆机贩子的成功。
+所以细想之下片名为《奇迹》本身就是有道理的。大概导演和编剧自己也清楚，这种一万个人里都不一定能挑出一个的故事只能以奇迹来称谓了，甚至于懒得去好好编一个结尾，匆匆做几页PPT一样的场景就应付了事。
+于是本来如果有一个合理些的结尾这个也许不算多么出圈但也算小彩的故事，就成了现在这碗骗钱的毒鸡汤。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-04-08 14:48:56 +0800 CST'>April 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 生活中没有那么多奇迹" href="https://zhen.media/post/blog/2022/%E7%8E%B0%E5%AE%9E%E7%94%9F%E6%B4%BB%E4%B8%AD%E6%B2%A1%E9%82%A3%E4%B9%88%E5%A4%9A%E5%A5%87%E8%BF%B9/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -333,45 +372,6 @@ up！up！up！</p>
   </div>
   <footer class="entry-footer"><span title='2020-07-08 14:48:56 +0800 CST'>July 8, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to 完美邮箱" href="https://zhen.media/post/blog/2019-2021/%E5%AE%8C%E7%BE%8E%E4%B8%96%E7%95%8C88%E9%82%AE%E7%AE%B1%E6%9C%89%E7%82%B9%E4%B8%9C%E8%A5%BF/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>局外人
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>对于这个世界来说，对于所有自己以外的人来说，我们都始终是一个局外人。
-这是我对《局外人》的简短书评，就是那篇荒谬的小说。
-荒谬的感情牵绊 我想很多人应该都理解不了默尔索这个角色，甚至谈不上喜欢。那或许是因为我们沉浸在这个有着诸多既定规则的世界中已久，已然不知道如果一个人不这样还应该什么样。
-事实上，默尔索在更多时候表现出的是一种异于常人的理智和清醒，无论是亲情，友情，还是他所谓的爱情，难道不是这样吗。
-而他一直所说的话，也不过是真实的内心反馈，或许是有些太直白了。
-而这更加让人（文中的众人）无法理解。为什么会有人漠视亲情，也谈不上拥有友情和爱情。但其实这件事跟别人有什么关系呢，这是默尔索自己生活啊。当他们将此事作为谈资滔滔不绝的时候，默尔索这个人本身就不重要了，他们想做的是占据道德制高点，并对他进行一番议论，甚至再加一番指责就更好了。
-你很难说他们不是因为嫉妒默尔索才这么干的，对不对。反正也没人知道，也许加缪清楚，但他没说就已经与世长辞了。
-但说到底，所谓感情这回事儿，从来就是每个人的看法不一的，因此表现出的反应也不一样。很难说整日缠绵的小情侣会比异地而居的老夫妻更恩爱，对吧。事情也好，感情也好，表达方式有很多种，而不是约定俗成的。不是一定要在葬礼上泣不成声才是孝顺、情深，也不是一定要日日缠绵才是恩爱难分。我们应该允许并接受这种观点，情感可以拥有更多种表达方式。
-同时也不得不说，不是所有人都觉得感情生活是必要的，是值得过的。又或者，最起码并不是那么重要。因此他们也就不会或者较少受感情这个东西的束缚和牵绊。某种程度上，就是无情无义的人，这样的人更加理性和专注，也更容易活出自己的生活方式。自然免不了遭到偏见和冷言冷语的攻击。毕竟这个社会告诉我们，人和动物的又一重大区别就是我们重感情，懂得感情。
-但毕竟感情很多时候是弊大于利的。感情越复杂，越是如此。大多数现代人的烦恼，除了生存压力外就是和其他人相处而产生的各种情感纠纷，而这又是这么多年来电视剧和电影乐此不疲又反复添油加醋生产的内容的根本所在。我们深陷其中，难以自拔。
-彼此独立些，斩断些感情上的牵绊，对每个人不见得是什么不好的事儿。起码我觉得是这样。
-局里局外，一生好走 局里局外，一生好走。这原是《围棋少年》片尾曲的最后一局，说的是围棋的棋局。
-但生活中，我们也生活在种种局里。因此我才会说，除自己之外，我们对别人而言都是局外人。作为一个个独立的个体而言，每个人都有自己的生活，这个生活或许会有别人参与，但主角永远是每个人自己，无从改变。
-所以当母亲去世时，默尔索就是一个局外人，而那些养老院的同伴们也是局外人。只是他们似乎不这么觉得，所以才发觉默尔索是多么离经叛道，不孝顺。法庭上的一次次辩论，默尔索本应是局中人，而且是主角，但也成为了局外人。局中人竟然是他的代理律师、原告律师和法官大人，或许还有陪审团和所有关注这个案件的人。在整个审理中，默尔索的存在感降到了最低，甚至比不过那些书记员更有用。在别人的局里，只有被操纵的下场。
-当然，就算他有机会说说自己真实的想法，估计也于事无补，反而更可能激起涟漪。毕竟那些陪审员和法官是多么敏感而自负，认为自己被负责正义和道德。其实我们每个人都是，当我们审视别人的生活时，也很容易将自己化身成那法官、陪审员或者诉讼律师一样的角色。我们很容易忘记自己只是个局外人，无权对别人的合理生活指指点点甚至大放厥词，就好像我们不希望别人对自己那么做一样。
-所以，让我们过自己的生活吧。不要试图干预别人的棋局，也不要在意别人的三言两语。说到底，每个人都是孤独地来到世上，孤独地生活，孤独地死去，你我如此，他们也是如此。</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-07-08 14:48:56 +0800 CST'>July 8, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to 局外人" href="https://zhen.media/post/blog/2019-2021/%E6%88%91%E4%BB%AC%E7%BB%88%E6%98%AF%E5%B1%80%E5%A4%96%E4%BA%BA/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>我的世界部分存档
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> </p>
-  </div>
-  <footer class="entry-footer"><span title='2020-07-08 14:48:56 +0800 CST'>July 8, 2020</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to 我的世界部分存档" href="https://zhen.media/post/blog/2019-2021/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E9%83%A8%E5%88%86%E5%AD%98%E6%A1%A3/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

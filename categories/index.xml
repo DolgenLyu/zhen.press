@@ -9,13 +9,22 @@
       <link>https://zhen.media/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 13 Jul 2022 00:47:22 +0800</lastBuildDate><atom:link href="https://zhen.media/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 11:37:34 +0800</lastBuildDate><atom:link href="https://zhen.media/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://zhen.media/categories/blog/</link>
-      <pubDate>Wed, 13 Jul 2022 00:47:22 +0800</pubDate>
+      <pubDate>Fri, 15 Jul 2022 11:37:34 +0800</pubDate>
       
       <guid>https://zhen.media/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>产品</title>
+      <link>https://zhen.media/categories/%E4%BA%A7%E5%93%81/</link>
+      <pubDate>Thu, 14 Jul 2022 13:27:22 +0800</pubDate>
+      
+      <guid>https://zhen.media/categories/%E4%BA%A7%E5%93%81/</guid>
       <description></description>
     </item>
     
