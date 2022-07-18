@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Series on ZHEN</title>
-    <link>https://zhen.media/series/</link>
+    <link>https://zhen.press/series/</link>
     <description>Recent content in Series on ZHEN</description>
     <image>
-      <url>https://zhen.media/papermod-cover.png</url>
-      <link>https://zhen.media/papermod-cover.png</link>
+      <url>https://zhen.press/papermod-cover.png</url>
+      <link>https://zhen.press/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zhen.media/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zhen.press/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

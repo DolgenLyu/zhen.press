@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>tip on ZHEN</title>
-    <link>https://zhen.media/tags/tip/</link>
+    <link>https://zhen.press/tags/tip/</link>
     <description>Recent content in tip on ZHEN</description>
     <image>
-      <url>https://zhen.media/papermod-cover.png</url>
-      <link>https://zhen.media/papermod-cover.png</link>
+      <url>https://zhen.press/papermod-cover.png</url>
+      <link>https://zhen.press/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 13 Jul 2022 00:47:22 +0800</lastBuildDate><atom:link href="https://zhen.media/tags/tip/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jul 2022 00:47:22 +0800</lastBuildDate><atom:link href="https://zhen.press/tags/tip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo部署后css失效的问题</title>
-      <link>https://zhen.media/post/blog/2022/hugo%E9%83%A8%E7%BD%B2css%E9%97%AE%E9%A2%98/</link>
+      <link>https://zhen.press/post/blog/2022/hugo%E9%83%A8%E7%BD%B2css%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 13 Jul 2022 00:47:22 +0800</pubDate>
       
-      <guid>https://zhen.media/post/blog/2022/hugo%E9%83%A8%E7%BD%B2css%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://zhen.press/post/blog/2022/hugo%E9%83%A8%E7%BD%B2css%E9%97%AE%E9%A2%98/</guid>
       <description>使用hugo有几天了，从最开始的一团糟到现在算是能够完整部署到服务器端而不出现问题了。结果虽然是好的，但这个过程其实挺折腾，毕竟好几个睡不着的晚上都在跟自己并不懂的事情做斗争，一遍又一遍尝试。唉，不能系统学习前端知识就是这样的。
 这次遇见的问题就是我使用的主题PaperMod有些样式我不是很满意，需要自己修改。于是我相当然地认为直接修改各个part的css文件就可以。然后这样的结果是只要你修改了主题里的那些css文件，重新生成静态资源并部署到githubpage等地方，就会出现css样式无法加载的问题。
 之前根据我从网上寻找的答案，很多人都说css样式丢失是部署出的问题，重新按照手动git方式部署就可以解决。我尝试了几次，都没有解决。而其中有两次我是把站点删除重新建立的，误打误撞就没问题，以为真的可以解决。然而再一次修改css文件后，部署后访问起来css又丢失了。
