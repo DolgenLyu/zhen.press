@@ -145,6 +145,25 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>使用CloudFlare开启免费自定义域名邮箱
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>偶然发现cloudflare提供了Beta版本的电子邮件功能，目前还是免费的。简单来说就是只要你把域名交给了cloudflare解析，那么就可以生成自己域名为后缀的邮箱了，如域名：myname.com，那么邮箱就可以为DIY@myname.com，DIY处任意填写。
+当然，事实上cloudflare并没有提供邮箱服务，这个邮箱只是中转名称而已，你还是需要一个实际的收件邮箱。实用性不能算聊胜于无，起码逼格够了，不过安全与隐私性目前不得而知。
+1.将域名DNS解析到cloudflare ​	这个操作应该不用说了吧，到购买域名的服务商那把域名DNS服务器更改成cloudflare就好了。
+类型 值 NS brad.ns.cloudflare.com NS tori.ns.cloudflare.com 2.创建自定义邮箱地址与目标地址 自定义地址就是想要生成的逼格地址，后缀为你的域名。
+目标地址就是收件地址了，填写自己最常用的邮箱就好。
+填写完毕后，你的目标邮箱会收到验证邮件，需要点击验证链接完整验证。
+3.解析邮件DNS记录 给域名添加MX解析，这些都是给邮箱用的，后台有一键填写，填写完成后会出现绿色的路由已启用提示。
+4.测试并开始使用吧。 查看后台可以发现，自定义地址和目标地址都不唯一，可以添加多个，意味着自定义邮箱也可以创建很多的，并且指向不同收件邮箱，实用性拉满，再加上目前该功能免费，其实还是不错的。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-08 14:48:56 +0800 CST'>July 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to 使用CloudFlare开启免费自定义域名邮箱" href="https://zhen.press/post/blog/2022/%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>光影
     </h2>
   </header>
@@ -337,18 +356,6 @@ up！up！up！</p>
   </div>
   <footer class="entry-footer"><span title='2020-07-08 14:48:56 +0800 CST'>July 8, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to 一些决定" href="https://zhen.press/post/blog/2019-2021/%E4%B8%80%E4%BA%9B%E5%86%B3%E5%AE%9A/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>书单
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 《张居正》✔ 《漫长的告别》✔ 《希腊棺材之谜》✔ 《人类灭绝》✔ 《文城》✔ 《鳗鱼的旅行》✔ 《月亮与六便士》✔ 《日光流年》✔ 《幻夜》✔ 《消失的13级台阶》✔ 《人生海海》✔ 《变形记》✔ 《寻路中国》✔ 《三体》✔ </p>
-  </div>
-  <footer class="entry-footer"><span title='2020-07-08 14:48:56 +0800 CST'>July 8, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to 书单" href="https://zhen.press/post/blog/2019-2021/2021%E4%B9%A6%E5%8D%95/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
