@@ -12,10 +12,10 @@
     <lastBuildDate>Fri, 08 Jul 2022 14:48:56 +0800</lastBuildDate><atom:link href="https://zhen.press/categories/tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CloudFlare与https的一些注意事项</title>
-      <link>https://zhen.press/post/blog/2022/%E8%B7%9Fcloudflare%E6%9C%89%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
+      <link>https://zhen.press/blog/2022/%E8%B7%9Fcloudflare%E6%9C%89%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E5%84%BF/</link>
       <pubDate>Fri, 08 Jul 2022 14:48:56 +0800</pubDate>
       
-      <guid>https://zhen.press/post/blog/2022/%E8%B7%9Fcloudflare%E6%9C%89%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
+      <guid>https://zhen.press/blog/2022/%E8%B7%9Fcloudflare%E6%9C%89%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E5%84%BF/</guid>
       <description> 一、宝塔面板 宝塔面板的web服务是python搭建的，不支持cloudflare的CDN，代理域名需要点掉云盾，不使用cf的CDN，等待缓存完成就可以了正常访问了。
 又或者，在宝塔版本7.9.0的设置中，发现了面板云端请求方式可以修改为PHP，但是否可以解决CF CDN访问的问题尚未测试。
 二、Github Pages Github Pages目前已经支持自定义域名的https了，但在套用cloudflare的情况下仍需注意应按照以下方案操作：
@@ -24,10 +24,10 @@
     
     <item>
       <title>使用CloudFlare开启免费自定义域名邮箱</title>
-      <link>https://zhen.press/post/blog/2022/%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</link>
+      <link>https://zhen.press/blog/2022/%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</link>
       <pubDate>Fri, 08 Jul 2022 14:48:56 +0800</pubDate>
       
-      <guid>https://zhen.press/post/blog/2022/%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</guid>
+      <guid>https://zhen.press/blog/2022/%E4%BD%BF%E7%94%A8cloudflare%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</guid>
       <description>偶然发现cloudflare提供了Beta版本的电子邮件功能，目前还是免费的。简单来说就是只要你把域名交给了cloudflare解析，那么就可以生成自己域名为后缀的邮箱了，如域名：myname.com，那么邮箱就可以为DIY@myname.com，DIY处任意填写。
 当然，事实上cloudflare并没有提供邮箱服务，这个邮箱只是中转名称而已，你还是需要一个实际的收件邮箱。实用性不能算聊胜于无，起码逼格够了，不过安全与隐私性目前不得而知。
 1.将域名DNS解析到cloudflare ​	这个操作应该不用说了吧，到购买域名的服务商那把域名DNS服务器更改成cloudflare就好了。
@@ -40,10 +40,10 @@
     
     <item>
       <title>路由器无线桥接</title>
-      <link>https://zhen.press/post/blog/2019-2021/%E6%97%A0%E7%BA%BF%E8%BF%9E%E6%8E%A5%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E4%B8%AD%E7%BB%A7%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <link>https://zhen.press/blog/2019-2021/%E6%97%A0%E7%BA%BF%E8%BF%9E%E6%8E%A5%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E4%B8%AD%E7%BB%A7%E7%9A%84%E6%96%B9%E6%B3%95/</link>
       <pubDate>Wed, 08 Jul 2020 14:48:56 +0800</pubDate>
       
-      <guid>https://zhen.press/post/blog/2019-2021/%E6%97%A0%E7%BA%BF%E8%BF%9E%E6%8E%A5%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E4%B8%AD%E7%BB%A7%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://zhen.press/blog/2019-2021/%E6%97%A0%E7%BA%BF%E8%BF%9E%E6%8E%A5%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E4%B8%AD%E7%BB%A7%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
       <description>刚回家的时候老路由器有点抽风，过年那几天更是频繁自动重启，一天多达五次。算起来它已经服役近乎六年，对于几乎全年无休的它而言有些故障也不奇怪。于是顶着大年三十去买了个新路由换上，救活家里的网络。当然，农村买不到智能路由，不过也是ac1200m，支持2.4G和5G双频（分别发射wifi），还能手机app管理，也不算是很落后了。
 有了这个以后，家里的台式正好也想移动个位置，但是没有足够的网线，光猫和新无线的位置不能移动，所以就想到了用老路由作为wifi中继的办法。一下是一些具体的步骤，上图太麻烦了，纯口述，熟悉路由器配置的都可以看懂。
 准备工作
